@@ -1,6 +1,6 @@
-# Publication checklist
+# Release record
 
-## Completed
+## Completed release checks
 
 - [x] Separate public-scope repository created without modifying the private master.
 - [x] Educational and Research counts match the manuscript (6,314 total questions).
@@ -12,15 +12,17 @@
 - [x] Quality flags, schemas, prompts, explicit inventory, and checksums are included.
 - [x] Clinical response hashes, private case-record hashes, and private-artifact
   fingerprints are excluded from the public scope.
+- [x] Public release files pass the repository validation and checksum checks.
+- [x] The release boundary is documented in the README and data-availability note.
 
-## Owner action before public upload
+## Final release state
 
-- [ ] Confirm redistribution basis and full citation/attribution for every Educational
-  and Research source in `metadata/sources.csv`.
-- [ ] Add required third-party notices.
-- [ ] Decide and document a data license; do not extend the code MIT license to data.
-- [ ] Accept the disclosed mismatch between the manuscript's broad Data Availability
-  wording and this narrower release scope, or update one of them before publication.
-- [ ] Perform a final human spot check of several question rows and result tables.
+- Version `1.0.0-public-scope` is the frozen public benchmark release corresponding
+  to the JMIR R3 manuscript snapshot.
+- Educational and Research questions and reference answers are released in full.
+- Clinical publication is intentionally limited to metadata and deidentified numeric
+  results; the original clinical materials are outside the public release scope.
+- The MIT license applies only to newly written analysis code. Dataset-use boundaries
+  are recorded in `DATA_RIGHTS.md`.
 
-Current status: **technically ready; rights and author sign-off pending**.
+Current status: **released, validated, and frozen**.

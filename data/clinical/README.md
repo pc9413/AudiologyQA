@@ -10,6 +10,6 @@ clustering needed for descriptive and grouped analysis, while omitting case text
 diagnostic images, reference answers, raw model responses, adjudicator rationales,
 source locators, and content fingerprints.
 
-The clinical materials remain in the private master archive pending source-rights,
-privacy, and governance review. This repository cannot be used to rerun clinical
-model inference from the original inputs.
+The withheld clinical materials remain outside the scope of this frozen public
+release. This repository cannot be used to rerun clinical model inference from the
+original inputs.

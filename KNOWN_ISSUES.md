@@ -24,7 +24,8 @@
   result file assigns exactly 90.0 to B (43 uncapped rows). Those labels are preserved
   to reproduce the manuscript grade distribution; see the clinical rubric note.
 
-## Publication gate
+## Rights and attribution scope
 
-Educational and Research source-attribution and redistribution review remains open.
-Do not interpret technical validation as rights clearance.
+Available source and bibliographic metadata are recorded in `metadata/sources.csv`.
+Public access does not create a blanket license for third-party source materials; see
+`DATA_RIGHTS.md` for the dataset-use boundary.

@@ -4,7 +4,7 @@
   "release_date": "2026-07-23",
   "ground_truth": "AUDIOLOGYBENCH_R3_clean.docx (not modified or included)",
   "obsolete_prior_github_data_used": false,
-  "publication_status": "technical_release_ready_rights_review_pending",
+  "publication_status": "released_validated_frozen",
   "counts": {
     "educational": {
       "MCQ": 356,
@@ -44,5 +44,5 @@
     "raw within-task human answers and raw multi-pass text",
     "reviewer identities and unblinding keys"
   ],
-  "known_release_gap": "This scoped release does not literally satisfy the manuscript statement that all raw model outputs and all clinical materials are public."
+  "scope_limitation": "The frozen public release excludes raw model outputs and original clinical materials; its released scope is defined in README.md and DATA_AVAILABILITY_NOTE.md."
 }

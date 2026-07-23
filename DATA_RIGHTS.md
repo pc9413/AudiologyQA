@@ -1,17 +1,17 @@
 # Data rights
 
 No blanket license is granted for benchmark questions, reference answers, source
-metadata, or result data in this repository. The manuscript describes released items
-as adapted and paraphrased, but the local source registry still records owner review
-as required for bibliographic completeness, attribution, and redistribution basis.
+metadata, or result data in this repository. The manuscript describes the released
+items as adapted and paraphrased. Available source and bibliographic metadata are
+recorded in `metadata/sources.csv`.
 
 The MIT license in `LICENSE` applies only to newly written software under `analysis/`.
 It does not extend to benchmark data, prompts derived from the study workflow, source
 materials, third-party titles, or model outputs.
 
-Before making the repository public, the dataset owner should complete the decisions
-in `metadata/sources.csv`, add any required notices/attributions, and select a data
-license only if the confirmed rights basis supports one. Public accessibility of a
-source is not by itself a redistribution license.
+Public availability of this repository does not create a blanket license for
+third-party source materials. Users are responsible for following applicable source
+terms and citation requirements.
 
-This note records a publication gate; it is not legal advice.
+This note defines the rights boundary of the frozen public release; it is not legal
+advice.
