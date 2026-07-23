@@ -1,0 +1,82 @@
+record_id,flag,group_id,review_status,notes
+EDU-MCQ-0163,frozen_exact_duplicate,EDU-DUP-MCQ-01,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0191,frozen_exact_duplicate,EDU-DUP-MCQ-01,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0171,frozen_exact_duplicate,EDU-DUP-MCQ-02,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0224,frozen_exact_duplicate,EDU-DUP-MCQ-02,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0175,frozen_exact_duplicate,EDU-DUP-MCQ-03,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0203,frozen_exact_duplicate,EDU-DUP-MCQ-03,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0177,frozen_exact_duplicate,EDU-DUP-MCQ-04,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0220,frozen_exact_duplicate,EDU-DUP-MCQ-04,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0607,frozen_exact_duplicate,EDU-DUP-TF-01,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0669,frozen_exact_duplicate,EDU-DUP-TF-01,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0608,frozen_exact_duplicate,EDU-DUP-TF-02,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0670,frozen_exact_duplicate,EDU-DUP-TF-02,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0621,frozen_exact_duplicate,EDU-DUP-TF-03,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0681,frozen_exact_duplicate,EDU-DUP-TF-03,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0653,frozen_exact_duplicate,EDU-DUP-TF-04,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0696,frozen_exact_duplicate,EDU-DUP-TF-04,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0661,frozen_exact_duplicate,EDU-DUP-TF-05,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0718,frozen_exact_duplicate,EDU-DUP-TF-05,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0662,frozen_exact_duplicate,EDU-DUP-TF-06,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0719,frozen_exact_duplicate,EDU-DUP-TF-06,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0663,frozen_exact_duplicate,EDU-DUP-TF-07,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-TF-0720,frozen_exact_duplicate,EDU-DUP-TF-07,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-0945,frozen_exact_duplicate,EDU-DUP-FIB-01,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1039,frozen_exact_duplicate,EDU-DUP-FIB-01,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-0947,frozen_exact_duplicate,EDU-DUP-FIB-02,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1044,frozen_exact_duplicate,EDU-DUP-FIB-02,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-0948,frozen_exact_duplicate,EDU-DUP-FIB-03,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1045,frozen_exact_duplicate,EDU-DUP-FIB-03,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1021,frozen_exact_duplicate,EDU-DUP-FIB-04,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1071,frozen_exact_duplicate,EDU-DUP-FIB-04,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1022,frozen_exact_duplicate,EDU-DUP-FIB-05,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1072,frozen_exact_duplicate,EDU-DUP-FIB-05,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1023,frozen_exact_duplicate,EDU-DUP-FIB-06,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1073,frozen_exact_duplicate,EDU-DUP-FIB-06,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1026,frozen_exact_duplicate,EDU-DUP-FIB-07,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1078,frozen_exact_duplicate,EDU-DUP-FIB-07,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1027,frozen_exact_duplicate,EDU-DUP-FIB-08,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1079,frozen_exact_duplicate,EDU-DUP-FIB-08,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1028,frozen_exact_duplicate,EDU-DUP-FIB-09,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1084,frozen_exact_duplicate,EDU-DUP-FIB-09,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1030,frozen_exact_duplicate,EDU-DUP-FIB-10,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1087,frozen_exact_duplicate,EDU-DUP-FIB-10,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1032,frozen_exact_duplicate,EDU-DUP-FIB-11,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1093,frozen_exact_duplicate,EDU-DUP-FIB-11,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1033,frozen_exact_duplicate,EDU-DUP-FIB-12,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1094,frozen_exact_duplicate,EDU-DUP-FIB-12,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1034,frozen_exact_duplicate,EDU-DUP-FIB-13,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1098,frozen_exact_duplicate,EDU-DUP-FIB-13,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1035,frozen_exact_duplicate,EDU-DUP-FIB-14,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1102,frozen_exact_duplicate,EDU-DUP-FIB-14,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1036,frozen_exact_duplicate,EDU-DUP-FIB-15,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1103,frozen_exact_duplicate,EDU-DUP-FIB-15,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1037,frozen_exact_duplicate,EDU-DUP-FIB-16,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1107,frozen_exact_duplicate,EDU-DUP-FIB-16,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1038,frozen_exact_duplicate,EDU-DUP-FIB-17,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1108,frozen_exact_duplicate,EDU-DUP-FIB-17,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1083,frozen_exact_duplicate,EDU-DUP-FIB-18,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-FIB-1085,frozen_exact_duplicate,EDU-DUP-FIB-18,preserved_for_frozen_result_alignment,Do not remove without updating manuscript counts and rerunning results.
+EDU-MCQ-0331,multiple_select_under_mcq_pool,,author_manuscript_alignment_required,Three keyed choices; preserved to match the frozen evaluated pool.
+EDU-FIB-0852,semantic_true_false_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-0954,semantic_true_false_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-0998,semantic_true_false_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1642,semantic_short_answer_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1650,semantic_forced_choice_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1651,semantic_forced_choice_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1652,semantic_true_false_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1653,semantic_true_false_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1654,semantic_true_false_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-1664,semantic_short_answer_under_fib_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-TF-0660,semantic_fill_in_blank_under_tf_label,,author_manuscript_alignment_required,Frozen question_type is preserved for result alignment.
+EDU-FIB-0951,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-FIB-0966,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-FIB-1053,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-FIB-1197,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-FIB-1260,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-FIB-1593,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-FIB-1601,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-TF-0721,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-TF-0906,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-TF-1102,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.
+EDU-TF-1111,difficulty_not_found_in_local_frozen_metadata,,author_label_required,Do not infer or guess a ground-truth difficulty label.

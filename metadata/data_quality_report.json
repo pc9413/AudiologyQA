@@ -1,0 +1,54 @@
+{
+  "status": "passed_with_disclosed_frozen_conditions",
+  "educational": {
+    "rows": 3139,
+    "unique_ids": 3139,
+    "types": {
+      "MCQ": 356,
+      "TF": 1112,
+      "FIB": 1671
+    },
+    "missing_difficulty": 11,
+    "multiple_select_rows": 1,
+    "duplicates": {
+      "exact_item_groups": 29,
+      "rows_in_exact_item_groups": 58,
+      "duplicate_stem_groups": 32,
+      "rows_in_duplicate_stem_groups": 65
+    }
+  },
+  "research": {
+    "rows": 3175,
+    "unique_ids": 3175,
+    "types": {
+      "TF": 1186,
+      "MCQ": 529,
+      "SA": 1460
+    },
+    "missing_difficulty": 0,
+    "duplicates": {
+      "exact_item_groups": 0,
+      "rows_in_exact_item_groups": 0,
+      "duplicate_stem_groups": 0,
+      "rows_in_duplicate_stem_groups": 0
+    }
+  },
+  "quality_flags": {
+    "rows": 81,
+    "by_flag": {
+      "frozen_exact_duplicate": 58,
+      "multiple_select_under_mcq_pool": 1,
+      "semantic_true_false_under_fib_label": 6,
+      "semantic_short_answer_under_fib_label": 2,
+      "semantic_forced_choice_under_fib_label": 2,
+      "semantic_fill_in_blank_under_tf_label": 1,
+      "difficulty_not_found_in_local_frozen_metadata": 11
+    }
+  },
+  "interpretation": [
+    "Frozen exact duplicate items are retained for manuscript/result alignment.",
+    "Stem-only duplication is reported separately because identical stems can differ in keyed answers or options.",
+    "Missing difficulty labels are left null rather than inferred.",
+    "Technical validation does not constitute source-rights clearance."
+  ]
+}

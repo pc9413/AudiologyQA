@@ -1,0 +1,4 @@
+analysis,key_statistic,result,direction_preserved,notes
+mixed_effects_model,Q3_vs_Q1_fixed_effect,"21.85 (SE 1.26, P<.001); Q2 vs Q1=-0.10 (SE 1.26, P=.94); residual ICC=0.170",true,Manuscript Table 4a
+case_level_nonparametric_bootstrap,Q3_minus_Q1_mean_difference_95CI,"18.38 to 25.53; Q3-Q2 18.93 to 24.84; Q3>Q1 in 1000/1000 resamples",true,"B=1000; seed=20260428"
+leave_one_case_out,Q1_and_Q3_mean_ranges,"Q1 67.44 to 68.19; Q3 89.58 to 90.20; Q3>Q1 in 67/67 folds",true,67 folds

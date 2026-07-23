@@ -1,0 +1,5 @@
+analysis,question_type,value,unit,notes
+contradiction-versus-reference rate,Q1,29.7,percent,SD 3.1 percentage points; range 25.0-35.3
+contradiction-versus-reference rate,Q3,2.8,percent,deterministic NLI scorer
+same label in at least 8 of 10 passes,Q1,71.0,percent of model-case items,17 cases x 4 models x 10 passes
+source rows,all,2040,rows,raw text-containing file withheld

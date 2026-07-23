@@ -1,0 +1,5 @@
+model,as_graded_accuracy_pct,strict_regrade_accuracy_pct,strict_plus_borderline_accuracy_pct
+Gemini 2.5 Pro,30.0,32.33,33.22
+Grok 4,26.99,28.49,29.52
+OpenAI O3,23.9,26.37,27.19
+Claude Sonnet 4 Thinking,22.81,24.38,25.62

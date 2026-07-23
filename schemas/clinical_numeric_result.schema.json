@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AUDIOLOGYBENCH deidentified clinical numeric result",
+  "type": "object",
+  "required": [
+    "evaluation_id",
+    "case_id",
+    "model",
+    "question_type",
+    "final_score",
+    "grade",
+    "critical_error_flag",
+    "passed"
+  ],
+  "properties": {
+    "evaluation_id": {
+      "type": "string",
+      "pattern": "^EVAL-[a-f0-9]{16}$"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^CLIN-[0-9]{3}$"
+    },
+    "model": {
+      "type": "string"
+    },
+    "question_type": {
+      "enum": [
+        "Q1",
+        "Q2",
+        "Q3"
+      ]
+    },
+    "final_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F"
+      ]
+    },
+    "critical_error_flag": {
+      "type": "boolean"
+    },
+    "score_capped": {
+      "type": "boolean"
+    },
+    "passed": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

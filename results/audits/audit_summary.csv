@@ -1,0 +1,11 @@
+audit,comparison,metric,value,ci_95,n,notes
+original_50,reviewer 1 vs reviewer 2,grade quadratic-weighted kappa,0.85,0.71-0.94,50,pre-consensus
+original_50,reviewer 1 vs reviewer 2,any-critical-error kappa,0.59,0.34-0.83,50,pre-consensus
+original_50,automated adjudicator vs consensus,grade quadratic-weighted kappa,0.31,0.03-0.55,50,overall
+original_50,automated adjudicator vs consensus,any-critical-error kappa,0.1,-0.19-0.41,50,overall
+expanded_Q1,reviewer 1 vs reviewer 2,grade quadratic-weighted kappa,0.78,0.68-0.85,80,image-grounded
+expanded_Q1,reviewer 1 vs reviewer 2,any-critical-error kappa,0.91,0.80-1.00,80,image-grounded
+expanded_Q1,reviewer 1 vs reviewer 2,exact grade agreement pct,65.0,,80,within-one-grade agreement 98.75%
+expanded_Q1,automated adjudicator vs human,grade quadratic-weighted kappa,0.05,-0.06-0.16,80,per-item labels are noisy
+expanded_Q1,automated adjudicator vs human,critical-error sensitivity pct,73.0,55-89,80,specificity 37%; PPV 36%; 34 over-flags vs 7 misses
+expanded_Q1,population-reweighted,adjudicator critical-error rate pct,36.2,,268,human estimates 28.3% and 33.6%

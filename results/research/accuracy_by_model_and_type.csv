@@ -1,0 +1,5 @@
+model,MCQ_accuracy_pct,TF_accuracy_pct,SA_accuracy_pct,aggregate_accuracy_pct
+Gemini 2.5 Pro,79.8,100.0,30.0,64.4
+Grok 4,78.1,100.0,27.0,62.8
+Claude Sonnet 4 Thinking,81.1,99.9,22.8,61.3
+OpenAI O3,76.6,99.1,23.9,60.8

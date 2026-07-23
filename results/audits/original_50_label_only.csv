@@ -1,0 +1,51 @@
+audit_item_id,question_type,model,automated_grade,automated_score,reviewer_1_grade,reviewer_1_critical_error,reviewer_2_grade,reviewer_2_critical_error,consensus_grade,consensus_mapped_score,consensus_critical_error,consensus_critical_error_category,consensus_process
+S01,Q1,Grok 4,B,77.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S02,Q1,Grok 4,D,49.0,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S03,Q2,Grok 4,B,82.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S04,Q3,Gemini 2.5 Pro,C,65.0,C,no,C,no,C,60.6,no,,two_reviewer_agreement_no_senior_change
+S05,Q3,OpenAI O3,A,100.0,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S06,Q3,Gemini 2.5 Pro,D,40.0,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S07,Q3,Claude Sonnet 4 Thinking,A,92.5,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S08,Q2,Claude Sonnet 4 Thinking,C,50.0,A,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S09,Q1,OpenAI O3,D,49.0,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S10,Q1,Gemini 2.5 Pro,B,90.0,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S11,Q2,OpenAI O3,B,75.0,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S12,Q3,Claude Sonnet 4 Thinking,B,82.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S13,Q3,Grok 4,D,40.0,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S14,Q3,OpenAI O3,B,75.0,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S15,Q2,OpenAI O3,D,37.5,D,yes,D,yes,D,45.0,yes,Missed Red Flag,two_reviewer_agreement_no_senior_change
+S16,Q3,OpenAI O3,C,65.0,D,yes,C,no,C,60.6,no,,senior_adjudicated_flagged_item
+S17,Q1,Gemini 2.5 Pro,A,97.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S18,Q2,Gemini 2.5 Pro,C,57.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S19,Q1,Gemini 2.5 Pro,D,49.0,A,no,A,no,B,82.0,no,,senior_adjudicated_flagged_item
+S20,Q1,OpenAI O3,B,87.5,D,yes,D,yes,D,45.0,yes,Fabricated / Erroneous Test Result,senior_adjudicated_flagged_item
+S21,Q3,OpenAI O3,A,100.0,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S22,Q1,Grok 4,C,72.5,B,no,C,no,D,45.0,yes,Multiple types present,senior_adjudicated_flagged_item
+S23,Q1,Claude Sonnet 4 Thinking,C,70.0,D,yes,D,yes,D,45.0,yes,Missed Red Flag,senior_adjudicated_flagged_item
+S24,Q1,Gemini 2.5 Pro,C,60.0,C,no,D,yes,D,45.0,yes,Fabricated / Erroneous Test Result,senior_adjudicated_flagged_item
+S25,Q3,Gemini 2.5 Pro,A,100.0,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S26,Q3,Grok 4,C,57.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S27,Q1,Claude Sonnet 4 Thinking,D,49.0,C,no,D,yes,D,45.0,yes,Fabricated / Erroneous Test Result,senior_adjudicated_flagged_item
+S28,Q2,Gemini 2.5 Pro,A,95.0,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S29,Q2,Gemini 2.5 Pro,B,90.0,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S30,Q1,Claude Sonnet 4 Thinking,D,49.0,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S31,Q2,Grok 4,C,50.0,D,yes,D,yes,D,45.0,yes,Type Misclassification,senior_adjudicated_flagged_item
+S32,Q2,Grok 4,B,75.0,A,no,B,no,D,45.0,yes,Type Misclassification,senior_adjudicated_flagged_item
+S33,Q2,Claude Sonnet 4 Thinking,D,45.0,D,yes,D,yes,D,45.0,yes,Missed Red Flag,two_reviewer_agreement_no_senior_change
+S34,Q2,Grok 4,D,37.5,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S35,Q1,Claude Sonnet 4 Thinking,B,77.5,C,no,C,no,C,60.6,no,,two_reviewer_agreement_no_senior_change
+S36,Q1,Claude Sonnet 4 Thinking,A,97.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S37,Q1,OpenAI O3,C,57.5,D,yes,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S38,Q3,Grok 4,B,82.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S39,Q2,Gemini 2.5 Pro,D,49.0,C,no,C,no,C,60.6,no,,senior_adjudicated_flagged_item
+S40,Q2,OpenAI O3,C,65.0,C,no,C,no,C,60.6,no,,two_reviewer_agreement_no_senior_change
+S41,Q1,OpenAI O3,A,97.5,B,no,D,yes,D,45.0,yes,Fabricated / Erroneous Test Result,senior_adjudicated_flagged_item
+S42,Q3,Claude Sonnet 4 Thinking,C,65.0,D,yes,D,yes,D,45.0,yes,Missed Red Flag,senior_adjudicated_flagged_item
+S43,Q3,Gemini 2.5 Pro,B,82.5,C,no,C,no,C,60.6,no,,two_reviewer_agreement_no_senior_change
+S44,Q3,Grok 4,A,92.5,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S45,Q3,Claude Sonnet 4 Thinking,D,47.5,C,no,C,no,C,60.6,no,,two_reviewer_agreement_no_senior_change
+S46,Q3,OpenAI O3,D,40.0,B,no,B,no,B,82.0,no,,senior_adjudicated_flagged_item
+S47,Q2,Claude Sonnet 4 Thinking,B,82.5,A,no,A,no,A,97.3,no,,two_reviewer_agreement_no_senior_change
+S48,Q2,OpenAI O3,B,82.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S49,Q2,Claude Sonnet 4 Thinking,B,82.5,B,no,B,no,B,82.0,no,,two_reviewer_agreement_no_senior_change
+S50,Q1,Grok 4,A,97.5,D,yes,C,no,D,45.0,yes,Fabricated / Erroneous Test Result,senior_adjudicated_flagged_item

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AUDIOLOGYBENCH research short-answer item result",
+  "type": "object",
+  "required": [
+    "research_item_id",
+    "sa_item_id",
+    "n_models_correct",
+    "all_models_incorrect"
+  ],
+  "properties": {
+    "research_item_id": {
+      "type": "string",
+      "pattern": "^RES-[0-9]{6}$"
+    },
+    "sa_item_id": {
+      "type": "string",
+      "pattern": "^SA_[0-9]{4}$"
+    },
+    "n_models_correct": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "all_models_incorrect": {
+      "enum": [
+        0,
+        1
+      ]
+    }
+  },
+  "additionalProperties": true
+}

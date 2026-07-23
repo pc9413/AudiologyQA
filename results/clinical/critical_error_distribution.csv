@@ -1,0 +1,7 @@
+critical_error_category,count,percentage_of_804
+Type Misclassification,34,4.2
+Severity Misclassification,41,5.1
+Fabricated or Erroneous Test Result,33,4.1
+Laterality Confusion,19,2.4
+Missed Red Flag,10,1.2
+Dangerous Recommendation,0,0.0

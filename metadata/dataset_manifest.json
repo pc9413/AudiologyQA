@@ -1,0 +1,48 @@
+{
+  "dataset_name": "AUDIOLOGYBENCH",
+  "release_version": "1.0.0-public-scope",
+  "release_date": "2026-07-23",
+  "ground_truth": "AUDIOLOGYBENCH_R3_clean.docx (not modified or included)",
+  "obsolete_prior_github_data_used": false,
+  "publication_status": "technical_release_ready_rights_review_pending",
+  "counts": {
+    "educational": {
+      "MCQ": 356,
+      "TF": 1112,
+      "FIB": 1671,
+      "total": 3139
+    },
+    "research": {
+      "MCQ": 529,
+      "TF": 1186,
+      "SA": 1460,
+      "total": 3175
+    },
+    "public_text_questions_total": 6314,
+    "clinical_metadata": {
+      "cases": 67,
+      "tasks": 201,
+      "images_referenced_but_not_included": 209
+    },
+    "clinical_numeric_results": 804,
+    "research_sa_item_results": 1460
+  },
+  "included": [
+    "complete frozen educational questions and references",
+    "complete frozen research-derived questions and references",
+    "manuscript-reported aggregate educational and research results",
+    "research SA per-item binary correctness labels",
+    "deidentified clinical per-evaluation numeric results",
+    "deidentified audit labels and statistical summaries",
+    "prompts, rubrics, schemas, source registry, and validation scripts"
+  ],
+  "withheld": [
+    "67 clinical case histories",
+    "209 clinical images",
+    "201 clinical reference answers and prompt instances",
+    "raw clinical model responses and adjudicator rationales",
+    "raw within-task human answers and raw multi-pass text",
+    "reviewer identities and unblinding keys"
+  ],
+  "known_release_gap": "This scoped release does not literally satisfy the manuscript statement that all raw model outputs and all clinical materials are public."
+}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use AUDIOLOGYBENCH, please cite the accompanying manuscript."
+title: "AUDIOLOGYBENCH: Evaluating Large Language Models in Clinical Audiology"
+type: dataset
+version: "1.0.0-public-scope"
+date-released: 2026-07-23
+repository-code: "https://github.com/pc9413/AudiologyQA"
+authors:
+  - family-names: Li
+    given-names: Linkai
+  - family-names: Mo
+    given-names: Changgeng
+  - family-names: Zhou
+    given-names: Haoshuai
+  - family-names: Yu
+    given-names: Hanlin
+  - family-names: Lu
+    given-names: Congxi
+  - family-names: Wang
+    given-names: Shangqiguo
+  - family-names: Athreya
+    given-names: Varsha M
+  - family-names: Fitzgerald
+    given-names: Matthew B
+  - family-names: Wang
+    given-names: Shan X

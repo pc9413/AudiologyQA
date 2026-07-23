@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks_run": 39,
+  "errors": [],
+  "counts": {
+    "educational": 3139,
+    "research": 3175,
+    "clinical_numeric": 804,
+    "research_sa_results": 1460
+  }
+}

@@ -1,0 +1,10 @@
+tier,component,public_granularity,status,notes
+educational,MCQ/TF/FIB results,model x question-type aggregate,included,Per-item model outputs were not present in the frozen local source set
+research,MCQ/TF results,model x question-type aggregate,included,Per-item model outputs were not present in the frozen local source set
+research,SA results,per-item binary correctness plus aggregate,included,Raw model answer text omitted
+clinical,804 evaluations,per-evaluation deidentified numeric scores,included,"No case text, images, references, raw responses, or rationales"
+clinical,original 50-item audit,deidentified label-only plus summary,included,Rationales omitted
+clinical,expanded Q1 audit,paired anonymous reviewer labels plus summary,included,Case/model linkage and rationales omitted
+clinical,within-task human baseline,summary only,included,Raw answers contain withheld clinical content
+clinical,multi-pass stability,summary only,included,Raw premise/hypothesis text withheld
+clinical,primary-endpoint robustness analyses,summary statistics,included,"Mixed-effects, case bootstrap, and leave-one-case-out results from manuscript Table 4a"

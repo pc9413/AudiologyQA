@@ -1,0 +1,5 @@
+metric,value,numerator,denominator,notes
+total_evaluations,804,,,67 cases x 4 models x 3 question types
+mean_score,75.14,,,SD 19.05
+pass_rate_pct,85.1,684,804,Grade C or above
+critical_error_rate_pct,13.1,105,804,At least one critical error

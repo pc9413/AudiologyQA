@@ -1,0 +1,88 @@
+{
+  "role": "expert audiology educator",
+  "task": {
+    "description": "Grade each item by comparing the current answers with Correct Answers in the same folder.",
+    "inputs": {
+      "model_answers": "The answers produced by the answerer (current answers file)",
+      "correct_answers": "The reference answers located in the same folder"
+    }
+  },
+  "grading_criteria": {
+    "description": "Treat an answer as correct if ANY of the following conditions is true.",
+    "conditions": [
+      {
+        "id": 1,
+        "name": "normalized_exact_match",
+        "rule": "After lower-casing and stripping leading/trailing spaces and punctuation, the strings match exactly."
+      },
+      {
+        "id": 2,
+        "name": "verbatim_substring",
+        "rule": "The model_answer contains the entire correct phrase verbatim, even if extra words appear before or after."
+      },
+      {
+        "id": 3,
+        "name": "parenthetical_acronym_difference",
+        "rule": "The only difference is a parenthetical acronym/abbreviation.",
+        "example": {
+          "correct": "Transfer-Appropriate Processing",
+          "model": "Transfer-Appropriate Processing (TAP)"
+        }
+      },
+      {
+        "id": 4,
+        "name": "generic_filler_noun_difference",
+        "rule": "The model_answer adds or drops a generic filler noun.",
+        "filler_nouns": [
+          "test",
+          "technique",
+          "technology",
+          "training",
+          "assessment",
+          "procedure",
+          "approach",
+          "method"
+        ],
+        "example": {
+          "equivalent_pair": ["probe microphone technology", "probe microphone"]
+        }
+      },
+      {
+        "id": 5,
+        "name": "expert_synonym_judgment",
+        "rule": "In your expert judgment the terms are true synonyms in standard audiology usage."
+      }
+    ]
+  },
+  "output_format": {
+    "per_item_line": {
+      "template": "<index>. <mark>  (<type>)",
+      "marks": {
+        "correct": "✅",
+        "incorrect": "❌"
+      },
+      "incorrect_suffix": {
+        "required_when": "mark is ❌",
+        "template": " – expected: <correct>, got: <model_answer>"
+      },
+      "ordering": "Original order of items must be preserved."
+    },
+    "summary_line": {
+      "position": "After the last item line",
+      "template": "Score: <correct_count>/<total> (Accuracy = <rounded_percent>%)",
+      "accuracy_rule": "Accuracy is a whole-number percentage rounded to the nearest integer."
+    }
+  },
+  "strict_rules": [
+    "Use exactly '✅' for correct and '❌' for incorrect.",
+    "Do NOT repeat the questions.",
+    "Do NOT add explanations beyond what is specified.",
+    "Accuracy must be a whole-number percentage rounded to the nearest integer."
+  ],
+  "output_examples": [
+    "1. ✅  (TF)",
+    "2. ❌  (FIB) – expected: probe microphone, got: real-ear microphone",
+    "3. ✅  (FIB)",
+    "Score: 2/3 (Accuracy = 67%)"
+  ]
+}

@@ -1,0 +1,13 @@
+model,vendor,snapshot,tiers,run_window,settings
+Gemini 2.5 Pro,Google,gemini-2.5-pro,educational;research;clinical,2025-08,provider defaults
+Grok 4,xAI,grok-4-0709,research;clinical,2025-08,provider defaults
+OpenAI O3,OpenAI,o3-2025-04-16,research;clinical,2025-08,provider defaults
+Claude Sonnet 4 Thinking,Anthropic,claude-sonnet-4-20250514,educational;research;clinical,2025-08,provider defaults; extended thinking
+Claude Sonnet 4,Anthropic,claude-sonnet-4-20250514,educational,2025-08,provider defaults
+Claude 3 Opus,Anthropic,claude-3-opus-20240229,educational,2025-08,provider defaults
+GPT o4-mini,OpenAI,o4-mini-2025-04-16,educational,2025-08,provider defaults
+GPT-4.1,OpenAI,gpt-4.1-2025-04-14,educational,2025-08,provider defaults
+GPT-4o,OpenAI,gpt-4o-2024-11-20,educational,2025-08,provider defaults
+DeepSeek R1,DeepSeek,deepseek-reasoner,educational,2025-08,provider defaults
+Gemini 2.5 Pro,Google,gemini-2.5-pro,educational/research adjudicator,2025,temperature 0
+Claude Opus 4.5,Anthropic,claude-opus-4-5-20251101,clinical adjudicator,2025-11 or later,temperature 0

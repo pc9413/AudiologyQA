@@ -1,0 +1,5 @@
+model,Q1_mean_score,Q2_mean_score,Q3_mean_score
+Gemini 2.5 Pro,69.85,74.9,88.25
+Grok 4,65.51,65.52,90.63
+OpenAI O3,69.72,65.19,88.32
+Claude Sonnet 4 Thinking,66.47,65.54,91.75

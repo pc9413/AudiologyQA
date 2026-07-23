@@ -1,0 +1,805 @@
+evaluation_id,case_id,model,question_type,numerical_accuracy,test_coverage,description_accuracy,hallucination_free,diagnostic_accuracy,reasoning_logic,evidence_support,relevance_to_diagnosis,clinical_feasibility,completeness,weighted_score,final_score,grade,critical_error_flag,critical_error_categories,score_capped,passed
+EVAL-5c916a68453a2b0c,CLIN-001,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-227550ee14e6fca8,CLIN-001,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-7ccdf0453a274af1,CLIN-001,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-bec43ef70468a290,CLIN-001,Grok 4,Q1,2,5,5,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-b2d918f0938bd858,CLIN-001,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-f4430c874e48c29f,CLIN-001,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-feaf23ca474ad545,CLIN-001,OpenAI O3,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-e2265cb628bbc7d3,CLIN-001,OpenAI O3,Q2,,,,,2,5,3,,,,3.1,52.5,C,False,,False,True
+EVAL-36b356d28f1e3ced,CLIN-001,OpenAI O3,Q3,,,,,,,,2,4,2,2.6,40.0,D,False,,False,False
+EVAL-9086031c0914bcd6,CLIN-001,Claude Sonnet 4 Thinking,Q1,2,5,5,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-b3f34d5183ec0d85,CLIN-001,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-c176e9efafd25b83,CLIN-001,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-da7c8b3533db62d4,CLIN-002,Gemini 2.5 Pro,Q1,5,4,2,2,,,,,,,3.8,49.0,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-0d153fc1b37c7140,CLIN-002,Gemini 2.5 Pro,Q2,,,,,5,4,4,,,,4.5,87.5,B,False,,False,True
+EVAL-5e7429dc55262118,CLIN-002,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8960c3a191f7927a,CLIN-002,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-c8b21f65828b1425,CLIN-002,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-1b3270bd43883087,CLIN-002,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8e7cc7fd7e8f243c,CLIN-002,OpenAI O3,Q1,2,5,5,4,,,,,,,3.7,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-ef0a7e580cbb96d5,CLIN-002,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-ad5e1e4d18b2fde4,CLIN-002,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-5e4416a612f8e1b9,CLIN-002,Claude Sonnet 4 Thinking,Q1,5,5,5,2,,,,,,,4.7,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-5b42aef2a41406f3,CLIN-002,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-5959e066d09182e3,CLIN-002,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-7d13248fa4d1724a,CLIN-003,Gemini 2.5 Pro,Q1,2,3,5,4,,,,,,,3.1,49.0,D,True,Laterality Confusion,True,False
+EVAL-7bf75c75b394f19f,CLIN-003,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-6a8c7133456d70ce,CLIN-003,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-2adeb1c2b6dce6b9,CLIN-003,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-c438ebb339925882,CLIN-003,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-8c05b621ff7e2ac9,CLIN-003,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-3748d150f4e759a7,CLIN-003,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-f886f1a0dd47ddb3,CLIN-003,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-69a136f4272a4bc3,CLIN-003,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-6ac99443605ee333,CLIN-003,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-de6da8dbe9b89f2c,CLIN-003,Claude Sonnet 4 Thinking,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-614c472308224ec6,CLIN-003,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-550341b96cdc8f94,CLIN-004,Gemini 2.5 Pro,Q1,5,4,2,4,,,,,,,4.0,49.0,D,True,Severity Misclassification,True,False
+EVAL-10836488a4cb7468,CLIN-004,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-6dd699efe8eceb3e,CLIN-004,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-4f8fabc63d295fcd,CLIN-004,Grok 4,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Severity Misclassification,True,False
+EVAL-4d4b6b3370768e90,CLIN-004,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-b13ed3c536521ee5,CLIN-004,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-b3f0b7ed5a3c4909,CLIN-004,OpenAI O3,Q1,2,4,2,4,,,,,,,2.8,45.0,D,True,Severity Misclassification,True,False
+EVAL-8ca7b07e3dcd7c7b,CLIN-004,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-d852f8f9ce88bb6f,CLIN-004,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-69656380868b6cbf,CLIN-004,Claude Sonnet 4 Thinking,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-f541da0de84d74e3,CLIN-004,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-eaabd448b9e0ed9e,CLIN-004,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-8208b7eab564b813,CLIN-005,Gemini 2.5 Pro,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Severity Misclassification,True,False
+EVAL-234356e081057d5a,CLIN-005,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-e9b9303e641fd955,CLIN-005,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-d1c31686b21b2bdc,CLIN-005,Grok 4,Q1,3,5,2,2,,,,,,,3.3,49.0,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-ad8ab4c11759598c,CLIN-005,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-5d9100d179067ced,CLIN-005,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-ab25b9e0662abb75,CLIN-005,OpenAI O3,Q1,2,5,2,2,,,,,,,2.9,47.5,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-78338d8db026a60e,CLIN-005,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-c71f31bcda58995e,CLIN-005,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-3a87a08507c8135d,CLIN-005,Claude Sonnet 4 Thinking,Q1,2,5,2,2,,,,,,,2.9,47.5,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-f02233bc50d76902,CLIN-005,Claude Sonnet 4 Thinking,Q2,,,,,4,3,3,,,,3.5,62.5,C,False,,False,True
+EVAL-f949fee206cdd8e6,CLIN-005,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-ece9740f8177abb6,CLIN-006,Gemini 2.5 Pro,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-409c707260b8f3e8,CLIN-006,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-462bca2087f02a4d,CLIN-006,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-7a35bca3fab6ac66,CLIN-006,Grok 4,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification;Type Misclassification,True,False
+EVAL-6577af814279becb,CLIN-006,Grok 4,Q2,,,,,5,3,4,,,,4.2,80.0,B,False,,False,True
+EVAL-43c62a7abfc7fad9,CLIN-006,Grok 4,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-81a2ebcb2166ec99,CLIN-006,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Laterality Confusion,True,False
+EVAL-4336051f9eda5e59,CLIN-006,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-60304aefcb127ea0,CLIN-006,OpenAI O3,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-7617505c25f2ca89,CLIN-006,Claude Sonnet 4 Thinking,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Laterality Confusion;Severity Misclassification;Type Misclassification,True,False
+EVAL-e79c4b53ed86f688,CLIN-006,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-e4fec7e8f6bb6f56,CLIN-006,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f933261384e94ced,CLIN-007,Gemini 2.5 Pro,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-b43b8f348cf5a1fe,CLIN-007,Gemini 2.5 Pro,Q2,,,,,5,5,4,,,,4.8,95.0,A,False,,False,True
+EVAL-053dad44bd9806d0,CLIN-007,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-0509572e623595fd,CLIN-007,Grok 4,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-f4eebfffaedbf666,CLIN-007,Grok 4,Q2,,,,,2,4,3,,,,2.8,45.0,D,False,,False,False
+EVAL-b37c87796e57a3c5,CLIN-007,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-3f2617bc50057de5,CLIN-007,OpenAI O3,Q1,5,5,3,4,,,,,,,4.5,87.5,B,False,,False,True
+EVAL-28eb8b0377104d6d,CLIN-007,OpenAI O3,Q2,,,,,2,4,3,,,,2.8,45.0,D,False,,False,False
+EVAL-6819baf56393d03c,CLIN-007,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-50bb45a26025b1b9,CLIN-007,Claude Sonnet 4 Thinking,Q1,5,4,4,4,,,,,,,4.4,85.0,B,False,,False,True
+EVAL-f1145c3c0377945c,CLIN-007,Claude Sonnet 4 Thinking,Q2,,,,,2,3,3,,,,2.5,37.5,D,False,,False,False
+EVAL-51c4fcbb56f535e6,CLIN-007,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-b0e081f3db868ab0,CLIN-008,Gemini 2.5 Pro,Q1,2,5,3,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-e165908a2617f08b,CLIN-008,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-85437f7c641beee1,CLIN-008,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-cb297cf82399c823,CLIN-008,Grok 4,Q1,2,5,5,2,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-d3a2ecfec8bf6f70,CLIN-008,Grok 4,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-11db4cc63d77e643,CLIN-008,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-a15e67fb3d9dd916,CLIN-008,OpenAI O3,Q1,2,5,2,2,,,,,,,2.9,47.5,D,True,Fabricated or Erroneous Test Result;Severity Misclassification;Type Misclassification,True,False
+EVAL-ee55ba0ed5e7d4ce,CLIN-008,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-fe3fb7ec86cf8b64,CLIN-008,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f3cc3d9d61ac3635,CLIN-008,Claude Sonnet 4 Thinking,Q1,2,5,5,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-78e1ebc570ab43f4,CLIN-008,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-933fca5bed83c312,CLIN-008,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-514a7455c7434746,CLIN-009,Gemini 2.5 Pro,Q1,2,5,3,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-a054f528fd117e2f,CLIN-009,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-e9092b76c8f4ed1f,CLIN-009,Gemini 2.5 Pro,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-7d318fd0430adf35,CLIN-009,Grok 4,Q1,3,5,2,4,,,,,,,3.5,49.0,D,True,Severity Misclassification,True,False
+EVAL-0cc26513eb316649,CLIN-009,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-af2a74876c1102d6,CLIN-009,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-fd223a7d173b813e,CLIN-009,OpenAI O3,Q1,2,5,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-82ead26d51befe0b,CLIN-009,OpenAI O3,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-225e016555bcfef7,CLIN-009,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-0f340ed8cb58cd0c,CLIN-009,Claude Sonnet 4 Thinking,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-200d3845f4f98886,CLIN-009,Claude Sonnet 4 Thinking,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-91e80afd9741a32e,CLIN-009,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-9fd175f47bef93df,CLIN-010,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-f097f1a9cd438725,CLIN-010,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-a3dcfc52e16143d6,CLIN-010,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-95f51fff2987dac5,CLIN-010,Grok 4,Q1,5,3,4,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-4be8c663c2f15630,CLIN-010,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-3e4a6e47169645ae,CLIN-010,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-eed4ab16e4999ba6,CLIN-010,OpenAI O3,Q1,5,3,4,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-11f8fa77a55ca9a9,CLIN-010,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-d7bd1f60d803c9d6,CLIN-010,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-e69d4dd3b72fce99,CLIN-010,Claude Sonnet 4 Thinking,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Severity Misclassification,True,False
+EVAL-78759f349d95c26a,CLIN-010,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-7074f62d7340fbd2,CLIN-010,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-d301b148f642d3b8,CLIN-011,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-888b27b3e6c69592,CLIN-011,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-89a79f08f6daf4c5,CLIN-011,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-2aa2b588cc8a2eea,CLIN-011,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-9675b316c75fac27,CLIN-011,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-387f384829b9bd67,CLIN-011,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1d33c2fda84a63da,CLIN-011,OpenAI O3,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-c7b02d99f7c708ad,CLIN-011,OpenAI O3,Q2,,,,,2,5,3,,,,3.1,52.5,C,False,,False,True
+EVAL-514ec6c185e3382e,CLIN-011,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-ceacede9057d8f48,CLIN-011,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-2cd6b779a1aa7997,CLIN-011,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-806e250143003146,CLIN-011,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-754dbab676644a52,CLIN-012,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-b536e935e9651d4a,CLIN-012,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-9f5689b7ed7a5353,CLIN-012,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-e8a0dba28fb941b2,CLIN-012,Grok 4,Q1,3,3,2,4,,,,,,,2.9,47.5,D,True,Severity Misclassification,True,False
+EVAL-122242ade184adc4,CLIN-012,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-6b399776daebea35,CLIN-012,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-d83cae7b79201871,CLIN-012,OpenAI O3,Q1,3,3,5,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-6abd3594a463bede,CLIN-012,OpenAI O3,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-039b6524603fed2c,CLIN-012,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1c355ecc0d86fc62,CLIN-012,Claude Sonnet 4 Thinking,Q1,3,3,5,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-cbae70873f3de4af,CLIN-012,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-72148a9a69e0a365,CLIN-012,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-4b8fb6f3091c2277,CLIN-013,Gemini 2.5 Pro,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Severity Misclassification,True,False
+EVAL-a9f8e1056b321aeb,CLIN-013,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-db7a3ab7957595a6,CLIN-013,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-a465f9753f2eba7a,CLIN-013,Grok 4,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Severity Misclassification,True,False
+EVAL-de9126ed6752da85,CLIN-013,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-f8403708ee64fb16,CLIN-013,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-a54298f82c250ab4,CLIN-013,OpenAI O3,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Severity Misclassification,True,False
+EVAL-4d860220779811cc,CLIN-013,OpenAI O3,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-bf6c405f756a5c60,CLIN-013,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-a8bd814ad13281aa,CLIN-013,Claude Sonnet 4 Thinking,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Severity Misclassification,True,False
+EVAL-5643ce0d2480eb12,CLIN-013,Claude Sonnet 4 Thinking,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-9e98bbb15daaf33e,CLIN-013,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-81b17be4ba4bdce8,CLIN-014,Gemini 2.5 Pro,Q1,5,3,4,4,,,,,,,4.1,49.0,D,True,Type Misclassification,True,False
+EVAL-ba4fe2ac84ddab02,CLIN-014,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-592b5d7484b07c2c,CLIN-014,Gemini 2.5 Pro,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-03aa0d86e96bd7c1,CLIN-014,Grok 4,Q1,3,4,2,4,,,,,,,3.2,49.0,D,True,Severity Misclassification;Type Misclassification,True,False
+EVAL-b5e696a9f8a31e49,CLIN-014,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-56a9ee610fe6dcca,CLIN-014,Grok 4,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-ea1eb6ca78e09579,CLIN-014,OpenAI O3,Q1,5,4,2,4,,,,,,,4.0,49.0,D,True,Type Misclassification,True,False
+EVAL-7c1b4f2612409bdd,CLIN-014,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-de0b554e34c0ec01,CLIN-014,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-8ade65adfdc78177,CLIN-014,Claude Sonnet 4 Thinking,Q1,3,4,2,4,,,,,,,3.2,49.0,D,True,Type Misclassification,True,False
+EVAL-f872495d77648ce8,CLIN-014,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-fd1f57df31f819d8,CLIN-014,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-dd6a92a97f77fe06,CLIN-015,Gemini 2.5 Pro,Q1,2,5,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-ed793989a0fc0f34,CLIN-015,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-80fff34944e835cb,CLIN-015,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-2f9ee9c50b0b86f7,CLIN-015,Grok 4,Q1,2,5,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-3203e5115c245bfc,CLIN-015,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-ed82ccbed90e8ae0,CLIN-015,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-e064f28919f9d69f,CLIN-015,OpenAI O3,Q1,2,5,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-cdbc19150c5a7585,CLIN-015,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-bde7de34e2c41c0a,CLIN-015,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1c51d0dd91f83caf,CLIN-015,Claude Sonnet 4 Thinking,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-0b84e2ee2f619969,CLIN-015,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-89e50165865e6442,CLIN-015,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-a8d60c8fb880b387,CLIN-016,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-3397f5a7e81010ed,CLIN-016,Gemini 2.5 Pro,Q2,,,,,2,5,3,,,,3.1,49.0,D,True,Missed Red Flag,True,False
+EVAL-f58918339587cb68,CLIN-016,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-a65d0a5be8d23d53,CLIN-016,Grok 4,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-d5663ed439d21b84,CLIN-016,Grok 4,Q2,,,,,2,4,3,,,,2.8,45.0,D,True,Missed Red Flag,True,False
+EVAL-51b7678665ecc60f,CLIN-016,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-c416830693811fbc,CLIN-016,OpenAI O3,Q1,5,4,3,4,,,,,,,4.2,80.0,B,False,,False,True
+EVAL-3a6d2c4932e05679,CLIN-016,OpenAI O3,Q2,,,,,2,3,3,,,,2.5,37.5,D,True,Missed Red Flag,True,False
+EVAL-b18b12647287a1c1,CLIN-016,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-1a91a8d7d964ee30,CLIN-016,Claude Sonnet 4 Thinking,Q1,3,4,4,4,,,,,,,3.6,65.0,C,False,,False,True
+EVAL-087cac8f21da4ba9,CLIN-016,Claude Sonnet 4 Thinking,Q2,,,,,2,5,3,,,,3.1,49.0,D,True,Missed Red Flag,True,False
+EVAL-f305ee044a046711,CLIN-016,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-6f50f56ba6d80ad9,CLIN-017,Gemini 2.5 Pro,Q1,3,3,3,4,,,,,,,3.1,52.5,C,False,,False,True
+EVAL-b391d3057e9180b6,CLIN-017,Gemini 2.5 Pro,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-267bb9a14d8d1ebf,CLIN-017,Gemini 2.5 Pro,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-547d706264b48eeb,CLIN-017,Grok 4,Q1,3,2,3,4,,,,,,,2.8,45.0,D,False,,False,False
+EVAL-6321dcb67afdc619,CLIN-017,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-607dd1bed20a1828,CLIN-017,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-c3749d1ea0affb7f,CLIN-017,OpenAI O3,Q1,3,3,4,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-babbe0dad0a34b94,CLIN-017,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-6fcd6ffda96feaa6,CLIN-017,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-9e70b9a96aa8d7ef,CLIN-017,Claude Sonnet 4 Thinking,Q1,3,3,3,4,,,,,,,3.1,52.5,C,False,,False,True
+EVAL-5fd26c428989c132,CLIN-017,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-965b2626c6459da7,CLIN-017,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-611b60321f2e4f34,CLIN-018,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-ae40ba83e7d59c71,CLIN-018,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-a3cde9112a8c99a7,CLIN-018,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f2e5ef3c4466631e,CLIN-018,Grok 4,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-03e9f9d75a7dda63,CLIN-018,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-4397a1868161f28d,CLIN-018,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-2c2223a967f5bf8b,CLIN-018,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-d9dd465c93dac7c7,CLIN-018,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-902c1b193ad3902d,CLIN-018,OpenAI O3,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-0891ebeab52630e7,CLIN-018,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-38d9aa8bf57104fc,CLIN-018,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-283c9801e78e7c71,CLIN-018,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-095564342fdea6ea,CLIN-019,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-2635039c0dad0aaf,CLIN-019,Gemini 2.5 Pro,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-1dcdccd3f633ca91,CLIN-019,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-30ba67d02280a996,CLIN-019,Grok 4,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-4a5215a018de721a,CLIN-019,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-23dcda2e2009c736,CLIN-019,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-1d693265fdaea416,CLIN-019,OpenAI O3,Q1,2,5,5,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-e2249941c86780f7,CLIN-019,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-c5479aab84be1695,CLIN-019,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-3fec44e3d6ee45f3,CLIN-019,Claude Sonnet 4 Thinking,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-486864918af64e13,CLIN-019,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-0e293a220bea2505,CLIN-019,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8d8286f5863443a1,CLIN-020,Gemini 2.5 Pro,Q1,3,3,4,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-e010ed80eca91d7e,CLIN-020,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-5aab833065051c3d,CLIN-020,Gemini 2.5 Pro,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-756774b6ec14848b,CLIN-020,Grok 4,Q1,3,3,4,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-0d246b4cda83bf9c,CLIN-020,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-7282d5182ba1f55d,CLIN-020,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-c314cd18485e4d18,CLIN-020,OpenAI O3,Q1,3,3,4,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-6e7167be406d3192,CLIN-020,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-ecb175f40a1083bb,CLIN-020,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-b5b88d7cbb32553e,CLIN-020,Claude Sonnet 4 Thinking,Q1,3,3,4,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-d442abb6a9ce184c,CLIN-020,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-eaa144c545383d1b,CLIN-020,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-6f3d65bf071bd078,CLIN-021,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-867e1b04605aa431,CLIN-021,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-3c74fc14234bb143,CLIN-021,Gemini 2.5 Pro,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-19f16ed5f12e966a,CLIN-021,Grok 4,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-62624c65fdb74aed,CLIN-021,Grok 4,Q2,,,,,2,3,3,,,,2.5,37.5,D,True,Missed Red Flag,True,False
+EVAL-0d779f982a9d41f3,CLIN-021,Grok 4,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-e8bfb23f2f4b2280,CLIN-021,OpenAI O3,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Fabricated or Erroneous Test Result;Severity Misclassification;Type Misclassification,True,False
+EVAL-73898ef71df50d52,CLIN-021,OpenAI O3,Q2,,,,,2,3,3,,,,2.5,37.5,D,True,Missed Red Flag,True,False
+EVAL-a489f7066409d22f,CLIN-021,OpenAI O3,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-706d977279be2316,CLIN-021,Claude Sonnet 4 Thinking,Q1,2,4,2,4,,,,,,,2.8,45.0,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-e1e9f3788b393feb,CLIN-021,Claude Sonnet 4 Thinking,Q2,,,,,2,4,3,,,,2.8,45.0,D,True,Missed Red Flag,True,False
+EVAL-b008199768d3c2bc,CLIN-021,Claude Sonnet 4 Thinking,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-2df6173113dbd551,CLIN-022,Gemini 2.5 Pro,Q1,3,5,2,4,,,,,,,3.5,49.0,D,True,Severity Misclassification,True,False
+EVAL-818f7fc9e26300e6,CLIN-022,Gemini 2.5 Pro,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-82b6ae62fcce3d60,CLIN-022,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-58ab1592c47e8b1c,CLIN-022,Grok 4,Q1,3,5,2,4,,,,,,,3.5,49.0,D,True,Severity Misclassification,True,False
+EVAL-613d7e1083ad8aad,CLIN-022,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-c7e7c04601c00cc1,CLIN-022,Grok 4,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-03bff90b91888958,CLIN-022,OpenAI O3,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-e928a7fb966d5c24,CLIN-022,OpenAI O3,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-a4f4df8a3235fb69,CLIN-022,OpenAI O3,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-7ff744c4c694543c,CLIN-022,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-f57f24b52a524c79,CLIN-022,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-3e1eb268505b3f44,CLIN-022,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-9158eaee019384e1,CLIN-023,Gemini 2.5 Pro,Q1,2,3,4,4,,,,,,,2.9,47.5,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-3043eec5aa14f835,CLIN-023,Gemini 2.5 Pro,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-8f01dfd2762d28c2,CLIN-023,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-47ae75683e45726d,CLIN-023,Grok 4,Q1,5,3,4,4,,,,,,,4.1,49.0,D,True,Laterality Confusion,True,False
+EVAL-39687bff2f7d0526,CLIN-023,Grok 4,Q2,,,,,3,3,4,,,,3.2,55.0,C,False,,False,True
+EVAL-ee95e8d155a42ff8,CLIN-023,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-25d72b1b2befab82,CLIN-023,OpenAI O3,Q1,2,4,4,4,,,,,,,3.2,49.0,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-3693954c6d0f0dfb,CLIN-023,OpenAI O3,Q2,,,,,3,3,4,,,,3.2,55.0,C,False,,False,True
+EVAL-3e0d9f63fe466981,CLIN-023,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-b7a409e2069d0909,CLIN-023,Claude Sonnet 4 Thinking,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-eaf01aabc563c51e,CLIN-023,Claude Sonnet 4 Thinking,Q2,,,,,3,5,4,,,,3.8,70.0,C,False,,False,True
+EVAL-bffec86d84337b2c,CLIN-023,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-506ccfe8a3ca52dc,CLIN-024,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-d1b047840aa72dbb,CLIN-024,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-3901703ea285b221,CLIN-024,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-765343814df324ad,CLIN-024,Grok 4,Q1,3,1,5,4,,,,,,,2.9,47.5,D,False,,False,False
+EVAL-fa2a6ebe84699506,CLIN-024,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-006e27c48d01a485,CLIN-024,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-0a0669a66673a0d1,CLIN-024,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-05d619578104a07e,CLIN-024,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-7c93678a6492515d,CLIN-024,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-bb1bc4f0cff9b8c9,CLIN-024,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-7f82d53bd9ff834b,CLIN-024,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-210834eec42062b7,CLIN-024,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-841367e55fd11485,CLIN-025,Gemini 2.5 Pro,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Laterality Confusion;Severity Misclassification,True,False
+EVAL-c037a0866cb49c1a,CLIN-025,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-243c83f761db79d9,CLIN-025,Gemini 2.5 Pro,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-1d93ecfb0c77769f,CLIN-025,Grok 4,Q1,2,4,2,4,,,,,,,2.8,45.0,D,True,Laterality Confusion;Severity Misclassification,True,False
+EVAL-23a34d169a789e7f,CLIN-025,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-e7135f5215374b96,CLIN-025,Grok 4,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-d0b056767e721ec3,CLIN-025,OpenAI O3,Q1,5,4,5,4,,,,,,,4.6,49.0,D,True,Laterality Confusion,True,False
+EVAL-62571e8eca60a4e3,CLIN-025,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-45e81114c8597b07,CLIN-025,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-809f3e6a8261e094,CLIN-025,Claude Sonnet 4 Thinking,Q1,5,3,2,4,,,,,,,3.7,49.0,D,True,Laterality Confusion;Severity Misclassification,True,False
+EVAL-4a7906545cc7c55a,CLIN-025,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-e785d85cefa08a65,CLIN-025,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-12dc3d71be327b2e,CLIN-026,Gemini 2.5 Pro,Q1,5,1,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-ef732dbdae3ccee0,CLIN-026,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-7b614f7c8c7b6593,CLIN-026,Gemini 2.5 Pro,Q3,,,,,,,,2,4,2,2.6,40.0,D,False,,False,False
+EVAL-82b10ac837f29a79,CLIN-026,Grok 4,Q1,2,1,4,4,,,,,,,2.3,32.5,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-c49e1e946a49494c,CLIN-026,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-b1a20d438d4b661a,CLIN-026,Grok 4,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-7c2bbc9543f59331,CLIN-026,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-fe58579332c7c443,CLIN-026,OpenAI O3,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-678e178deaf1c557,CLIN-026,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-4cc2400c0fb49052,CLIN-026,Claude Sonnet 4 Thinking,Q1,2,1,4,4,,,,,,,2.3,32.5,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-31c749861fae92b2,CLIN-026,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-08f0074a36e3320d,CLIN-026,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-eff236b14045ac9a,CLIN-027,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-1a7c1dd1e4efdedc,CLIN-027,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-e43162401eb7c75c,CLIN-027,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-53f07c751f72e256,CLIN-027,Grok 4,Q1,5,5,3,4,,,,,,,4.5,87.5,B,False,,False,True
+EVAL-a67d1ca56db99a04,CLIN-027,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-37e5c035bc9ebdb6,CLIN-027,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-9137079d37c8fe25,CLIN-027,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-c7cacb104c215ae8,CLIN-027,OpenAI O3,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-8a8cde561f88ca05,CLIN-027,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-a81eb8bd2c439005,CLIN-027,Claude Sonnet 4 Thinking,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-14531d025dc73ee8,CLIN-027,Claude Sonnet 4 Thinking,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-ce185fe105c71c93,CLIN-027,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1eb6158cb91d1f9b,CLIN-028,Gemini 2.5 Pro,Q1,3,3,3,4,,,,,,,3.1,52.5,C,False,,False,True
+EVAL-58a0a6d66bfcbf99,CLIN-028,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-23d5715863d4d17f,CLIN-028,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-b24c55d50d908b80,CLIN-028,Grok 4,Q1,3,3,3,4,,,,,,,3.1,52.5,C,False,,False,True
+EVAL-58266345bf2391a0,CLIN-028,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-9604fe3c2ba45790,CLIN-028,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-5bd67c526f40ed49,CLIN-028,OpenAI O3,Q1,3,3,3,4,,,,,,,3.1,52.5,C,False,,False,True
+EVAL-7a95567a7705cc1b,CLIN-028,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-58392a284327b362,CLIN-028,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-ded9dabebc02c549,CLIN-028,Claude Sonnet 4 Thinking,Q1,3,3,3,4,,,,,,,3.1,52.5,C,False,,False,True
+EVAL-46a10609fc89cf44,CLIN-028,Claude Sonnet 4 Thinking,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-2a41a55fe1bbed96,CLIN-028,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-d6ff895e79491bc5,CLIN-029,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-58d25626c8307112,CLIN-029,Gemini 2.5 Pro,Q2,,,,,2,5,3,,,,3.1,49.0,D,True,Missed Red Flag,True,False
+EVAL-7e3c3cd0531d09d2,CLIN-029,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f5cf17a745abfd8b,CLIN-029,Grok 4,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-eb7d1f3b8d8874f1,CLIN-029,Grok 4,Q2,,,,,2,3,3,,,,2.5,37.5,D,True,Missed Red Flag,True,False
+EVAL-cf84bf5c0c2b6999,CLIN-029,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-350212c6f6f8ad91,CLIN-029,OpenAI O3,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-627e80c6866707d7,CLIN-029,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-6b57f401dbc17ef9,CLIN-029,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-83cfc8c166fa48c9,CLIN-029,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-699bca7e0bb5223f,CLIN-029,Claude Sonnet 4 Thinking,Q2,,,,,2,3,3,,,,2.5,37.5,D,True,Missed Red Flag,True,False
+EVAL-56e8591a8638605f,CLIN-029,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-b865c38113ba8512,CLIN-030,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,49.0,D,True,Laterality Confusion,True,False
+EVAL-89b76ec4c994077e,CLIN-030,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-ad6e0a2a957473d8,CLIN-030,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1e16a8c917f8f047,CLIN-030,Grok 4,Q1,2,3,5,4,,,,,,,3.1,49.0,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-cda87c15d633f266,CLIN-030,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-63911a4fcde5ad37,CLIN-030,Grok 4,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-e2f2c34f062d79d1,CLIN-030,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,49.0,D,True,Laterality Confusion,True,False
+EVAL-dcf17b5baf53a705,CLIN-030,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-d20dcf62f00a7737,CLIN-030,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-64bd62b53efd163d,CLIN-030,Claude Sonnet 4 Thinking,Q1,2,5,5,4,,,,,,,3.7,49.0,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-b3aebddb740ab43c,CLIN-030,Claude Sonnet 4 Thinking,Q2,,,,,2,5,3,,,,3.1,52.5,C,False,,False,True
+EVAL-e33b2ddc2cd86fed,CLIN-030,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-0e38c1a89de13690,CLIN-031,Gemini 2.5 Pro,Q1,2,4,2,4,,,,,,,2.8,45.0,D,True,Severity Misclassification,True,False
+EVAL-ad8e35e547556c5b,CLIN-031,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-d11c55f0af85c10d,CLIN-031,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-7fba87c98581f17c,CLIN-031,Grok 4,Q1,2,4,5,4,,,,,,,3.4,49.0,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-150fc9037475297f,CLIN-031,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-6f10db040a8bf18e,CLIN-031,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1007422924e5a02a,CLIN-031,OpenAI O3,Q1,5,4,5,4,,,,,,,4.6,49.0,D,True,Laterality Confusion,True,False
+EVAL-c683b58a980d3571,CLIN-031,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-fe453d75772de276,CLIN-031,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8608d37bca45116e,CLIN-031,Claude Sonnet 4 Thinking,Q1,2,4,5,4,,,,,,,3.4,49.0,D,True,Fabricated or Erroneous Test Result;Laterality Confusion,True,False
+EVAL-1c38011dca258f85,CLIN-031,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-af7983690283e482,CLIN-031,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-3c0554d3508eed30,CLIN-032,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,49.0,D,True,Laterality Confusion,True,False
+EVAL-f7e665653cc324f6,CLIN-032,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-b2b85cb54348199a,CLIN-032,Gemini 2.5 Pro,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-2e0d27d9f9ebae0b,CLIN-032,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-2ed3748f53f17e8e,CLIN-032,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-28dccf120963ba16,CLIN-032,Grok 4,Q3,,,,,,,,2,4,2,2.6,40.0,D,False,,False,False
+EVAL-c3c77535c5ad6b61,CLIN-032,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-6cc707be15bc16a0,CLIN-032,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-46e13644d1429441,CLIN-032,OpenAI O3,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-25a80cbb0f81dc80,CLIN-032,Claude Sonnet 4 Thinking,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-8e1c6dce1e6a148d,CLIN-032,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-0f739b7b403a229d,CLIN-032,Claude Sonnet 4 Thinking,Q3,,,,,,,,2,5,2,2.9,47.5,D,False,,False,False
+EVAL-2ec31d85ff57bac4,CLIN-033,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-ae9d18ae949fd9ae,CLIN-033,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-09b35f353f3d52af,CLIN-033,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-a991d1ccdaa6d307,CLIN-033,Grok 4,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-e37ac395b2c835f3,CLIN-033,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-c792b7b787ce629d,CLIN-033,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-33aa74d400fa6644,CLIN-033,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-8a7256819bb16b6a,CLIN-033,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-30294edc45346262,CLIN-033,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-eee108c557406591,CLIN-033,Claude Sonnet 4 Thinking,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-86e627d1837fd340,CLIN-033,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-039fe6ac3f961092,CLIN-033,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-19a36a183e258c57,CLIN-034,Gemini 2.5 Pro,Q1,2,4,5,4,,,,,,,3.4,60.0,C,False,,False,True
+EVAL-a8fbfb9f3cd04736,CLIN-034,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-f9b437d9f3c4cc10,CLIN-034,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-a53c242d36fbcd1c,CLIN-034,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-4b47f41e9898b8a5,CLIN-034,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-ed73e3da106f001d,CLIN-034,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-213d6c0d17634ed2,CLIN-034,OpenAI O3,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Severity Misclassification,True,False
+EVAL-845809c0c0020661,CLIN-034,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-c8bd10f1df363b9c,CLIN-034,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-879710e115c7ae55,CLIN-034,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-6f1bff572a88b12f,CLIN-034,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-7d0b0bbf6b651a60,CLIN-034,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-bc269ec7c63b19ee,CLIN-035,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-a7057e9ad0bcc56e,CLIN-035,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-03fa1e6b30a8dc7b,CLIN-035,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-26da0673b92e5140,CLIN-035,Grok 4,Q1,3,2,5,4,,,,,,,3.2,55.0,C,False,,False,True
+EVAL-14638a410a9653dc,CLIN-035,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-9f612f82d06fb2a4,CLIN-035,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-6962510b8868ca1c,CLIN-035,OpenAI O3,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-eb104138c757b065,CLIN-035,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-ddf11a86e63c901f,CLIN-035,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-ee32b939f95c1b69,CLIN-035,Claude Sonnet 4 Thinking,Q1,3,2,5,4,,,,,,,3.2,55.0,C,False,,False,True
+EVAL-da317bc82f57f8df,CLIN-035,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-e793c3cf46a24e9d,CLIN-035,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-4562c4f00ded5a8a,CLIN-036,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-4b4ac8908b127dc9,CLIN-036,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-66b9d950b47c827e,CLIN-036,Gemini 2.5 Pro,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-dcf8fe80cdcb88c2,CLIN-036,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-a3f5407bb88eee9a,CLIN-036,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-4e3670f7adb03e13,CLIN-036,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-d4f5a2a1b71766ac,CLIN-036,OpenAI O3,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-173f02658b60ea81,CLIN-036,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-fd95be676d676c68,CLIN-036,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-93629783208ba961,CLIN-036,Claude Sonnet 4 Thinking,Q1,2,4,5,4,,,,,,,3.4,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-534c34933225f1a2,CLIN-036,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-533e107b02f2c6b9,CLIN-036,Claude Sonnet 4 Thinking,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-8f593ff175c5a26b,CLIN-037,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-0dd052266b5119a3,CLIN-037,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-b893d57dabb1c414,CLIN-037,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-6e02bb67d6624f8f,CLIN-037,Grok 4,Q1,2,4,4,4,,,,,,,3.2,49.0,D,True,Type Misclassification,True,False
+EVAL-af422fe2f6bd4c23,CLIN-037,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-8da824d8905fdcb2,CLIN-037,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-bd1565c08c61dd84,CLIN-037,OpenAI O3,Q1,5,4,2,4,,,,,,,4.0,49.0,D,True,Severity Misclassification;Type Misclassification,True,False
+EVAL-970e0f2976afe413,CLIN-037,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-db6ad6e3da67e8e6,CLIN-037,OpenAI O3,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-2f674443f4536d38,CLIN-037,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,49.0,D,True,Type Misclassification,True,False
+EVAL-89caa9be5a725117,CLIN-037,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-61c34a1e7e32b88e,CLIN-037,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-64ac75df0ce4ed54,CLIN-038,Gemini 2.5 Pro,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-11dd029e5d11bdb5,CLIN-038,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-5484a072af6bc1be,CLIN-038,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-3ede0372c59d95cf,CLIN-038,Grok 4,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-de0ffd8d985bed68,CLIN-038,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-b6e7098310ab7360,CLIN-038,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-86f3965852cffea9,CLIN-038,OpenAI O3,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-9d76adbb2c44f0c3,CLIN-038,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-e844d57ead1ffc9e,CLIN-038,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-af2e5e30d6bc3f80,CLIN-038,Claude Sonnet 4 Thinking,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-c494bfe55ee19df8,CLIN-038,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-e198e64172244989,CLIN-038,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-bb2eb6e9c288846e,CLIN-039,Gemini 2.5 Pro,Q1,5,4,4,4,,,,,,,4.4,49.0,D,True,Type Misclassification,True,False
+EVAL-2eecc39243b3f48a,CLIN-039,Gemini 2.5 Pro,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-090199e628c92cf3,CLIN-039,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-42ce702473533931,CLIN-039,Grok 4,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result;Type Misclassification,True,False
+EVAL-dc88a5ef99a9a858,CLIN-039,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-ca72aa40c95243ad,CLIN-039,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-c9835e5de029ba4b,CLIN-039,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-148ff8a4ef662565,CLIN-039,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-c41120ca109921a5,CLIN-039,OpenAI O3,Q3,,,,,,,,2,4,2,2.6,40.0,D,False,,False,False
+EVAL-7a61ebd532c1632f,CLIN-039,Claude Sonnet 4 Thinking,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Type Misclassification,True,False
+EVAL-921bf39fa911d3e9,CLIN-039,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-eeabd4642a286ada,CLIN-039,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-acab1554dd9890f5,CLIN-040,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-b98b37e6c46199db,CLIN-040,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-574a6fafb39677e9,CLIN-040,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-8cdddd269836e4a7,CLIN-040,Grok 4,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-c64cf8e51526a4a8,CLIN-040,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-2703028908b75c35,CLIN-040,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-8a8f1eeb1fcb4192,CLIN-040,OpenAI O3,Q1,5,5,3,4,,,,,,,4.5,87.5,B,False,,False,True
+EVAL-cd6f43fa026a2112,CLIN-040,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-6b6e45bea858aa74,CLIN-040,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-765aee47b7ef4206,CLIN-040,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-f09ae4a6de59087b,CLIN-040,Claude Sonnet 4 Thinking,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-7d1265cd5eb496a6,CLIN-040,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-431fd535953b1b30,CLIN-041,Gemini 2.5 Pro,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-2ddbbe424cd5ef17,CLIN-041,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-024c9826e22b35c7,CLIN-041,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-78c95a1a66967a40,CLIN-041,Grok 4,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-f27eb64a9ef8658d,CLIN-041,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-1b9c1c39e437010e,CLIN-041,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-7ee760a99c86c826,CLIN-041,OpenAI O3,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-474d99d5fe712d19,CLIN-041,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-1cdc110eb9e24ba9,CLIN-041,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-fe7ccbcf31a20914,CLIN-041,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-5ea40fc97e0374dc,CLIN-041,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-31c902f1bdf01647,CLIN-041,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-e9f13b77c7ce1b7f,CLIN-042,Gemini 2.5 Pro,Q1,2,5,5,4,,,,,,,3.7,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-ea1b1d15fad2c50f,CLIN-042,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-113ab1f41a54d7f3,CLIN-042,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-171fda8f08b86ba3,CLIN-042,Grok 4,Q1,3,3,5,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-17bbb92a98e808e8,CLIN-042,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-6aad9b51a4c7fd92,CLIN-042,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-d57543cf16088984,CLIN-042,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-e6fa05d21a2c62ee,CLIN-042,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-041cf3975c9012be,CLIN-042,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-ec9ad97163bdf2b4,CLIN-042,Claude Sonnet 4 Thinking,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Fabricated or Erroneous Test Result;Severity Misclassification,True,False
+EVAL-9f9dd7a49c7eb512,CLIN-042,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-5566792fa3d3a9f1,CLIN-042,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-a1e9eac44f1b2936,CLIN-043,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-b17c3ce79ca3be70,CLIN-043,Gemini 2.5 Pro,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-0b79fa7c74d6d1b3,CLIN-043,Gemini 2.5 Pro,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-fbce04cd29899793,CLIN-043,Grok 4,Q1,5,5,4,2,,,,,,,4.5,49.0,D,True,Fabricated or Erroneous Test Result;Type Misclassification,True,False
+EVAL-794cc185ef9d3813,CLIN-043,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-ae063f226c5d0644,CLIN-043,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-a17c97fef6ea9462,CLIN-043,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-522b74917ae9b738,CLIN-043,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-104ea2426354e790,CLIN-043,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-b590bd742df5999c,CLIN-043,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-b7056da8cff70bc0,CLIN-043,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-0d9315a67aaf9d8d,CLIN-043,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-ffdd5c5068ed6118,CLIN-044,Gemini 2.5 Pro,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-bf3990a7d9dad841,CLIN-044,Gemini 2.5 Pro,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-14428b36a0973eff,CLIN-044,Gemini 2.5 Pro,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-11b2f702c485e6ed,CLIN-044,Grok 4,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-d569f29ec878b6a2,CLIN-044,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-93ba1afe7b4d9f7e,CLIN-044,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-439beed80bf0bd6d,CLIN-044,OpenAI O3,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-f562c9fba9d3feaa,CLIN-044,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-11a2c31226882198,CLIN-044,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-6e4f6ef90e90f930,CLIN-044,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-27c85b84a31608ab,CLIN-044,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-5d1b7dddbcd1888b,CLIN-044,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-c16306c731435080,CLIN-045,Gemini 2.5 Pro,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-f9fef284cd19bcb8,CLIN-045,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-ec4301588038d377,CLIN-045,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-f2352a25cea2bf10,CLIN-045,Grok 4,Q1,2,5,5,4,,,,,,,3.7,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-2c39f474176c306d,CLIN-045,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-b1ec07292621f6f2,CLIN-045,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-d4c3b2623e0c554a,CLIN-045,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-e363187153a401a0,CLIN-045,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-8f223ab5f9663871,CLIN-045,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8c095f41e3bf8c7a,CLIN-045,Claude Sonnet 4 Thinking,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-d7f1fbe538f46d73,CLIN-045,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-25f8632eb7959175,CLIN-045,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-183877c620746edc,CLIN-046,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-60814db857a4dba8,CLIN-046,Gemini 2.5 Pro,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-598e922921c6de59,CLIN-046,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-236feca9d92d0f32,CLIN-046,Grok 4,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-fe54e78236f97d01,CLIN-046,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-1659e83c998de687,CLIN-046,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-6fc7fc8090c2ee58,CLIN-046,OpenAI O3,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-57acd0f864fa4319,CLIN-046,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-30b6a1535c58322a,CLIN-046,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-30ee382a77cd58e8,CLIN-046,Claude Sonnet 4 Thinking,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-de4306330f9b7f67,CLIN-046,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-8b1c5cf8aa3a86f7,CLIN-046,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-58455ba4470d9c3b,CLIN-047,Gemini 2.5 Pro,Q1,3,5,2,4,,,,,,,3.5,49.0,D,True,Severity Misclassification,True,False
+EVAL-39a21fafe23bd6b0,CLIN-047,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-02073fbe31dff1fd,CLIN-047,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-bb14bd3d0c38531b,CLIN-047,Grok 4,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-d0ba487dfddab4d6,CLIN-047,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-912ec61b376edc78,CLIN-047,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-ce4b70e1e980fc37,CLIN-047,OpenAI O3,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-4e1915ec75abe3c4,CLIN-047,OpenAI O3,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-097e902c02666d2b,CLIN-047,OpenAI O3,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-9838c71117910313,CLIN-047,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-2ddb61bfffa7b98f,CLIN-047,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-bd2d384b21e8787d,CLIN-047,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-2be39e854cf422bc,CLIN-048,Gemini 2.5 Pro,Q1,5,4,2,4,,,,,,,4.0,49.0,D,True,Severity Misclassification,True,False
+EVAL-57eb557b82dbd625,CLIN-048,Gemini 2.5 Pro,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-185059ca70fd0f8d,CLIN-048,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-fe96182867cc9376,CLIN-048,Grok 4,Q1,3,3,5,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-7da6b91cd56e3fee,CLIN-048,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-76c6b546e1cbf420,CLIN-048,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-ac47f0efd1d9e652,CLIN-048,OpenAI O3,Q1,5,4,5,4,,,,,,,4.6,90.0,B,False,,False,True
+EVAL-68b8bf72f3b3317c,CLIN-048,OpenAI O3,Q2,,,,,3,5,4,,,,3.8,70.0,C,False,,False,True
+EVAL-c79217f332133fe1,CLIN-048,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f65739667f285637,CLIN-048,Claude Sonnet 4 Thinking,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-693d5a39dda20572,CLIN-048,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-63631d4376213eaa,CLIN-048,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8af351adfa399b23,CLIN-049,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-d6e2fc9c4bdd8de9,CLIN-049,Gemini 2.5 Pro,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-8e2f8dd04447cb36,CLIN-049,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-7d6118e97e92aaa9,CLIN-049,Grok 4,Q1,3,2,4,4,,,,,,,3.0,50.0,C,False,,False,True
+EVAL-c49ff4675169630f,CLIN-049,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-57162cecb2e8f345,CLIN-049,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-3d0bf36f45f1fc19,CLIN-049,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-7db651385726774c,CLIN-049,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-e90631ea1c49309c,CLIN-049,OpenAI O3,Q3,,,,,,,,4,4,4,4.0,75.0,B,False,,False,True
+EVAL-e9dbef9cb058cc0e,CLIN-049,Claude Sonnet 4 Thinking,Q1,5,3,4,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-d0bf6c90d0a00f60,CLIN-049,Claude Sonnet 4 Thinking,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-cabce1f8e5675019,CLIN-049,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-51201b84425c689f,CLIN-050,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-c74b485ad24726aa,CLIN-050,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-6e5039956e36381d,CLIN-050,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-ae15360e456da3be,CLIN-050,Grok 4,Q1,3,3,4,4,,,,,,,3.3,57.5,C,False,,False,True
+EVAL-b1a4447930fc1afe,CLIN-050,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-dc9a84a5774d81fc,CLIN-050,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-c90f2a89aa4ad237,CLIN-050,OpenAI O3,Q1,5,3,5,4,,,,,,,4.3,82.5,B,False,,False,True
+EVAL-27b2fb6dc00624d6,CLIN-050,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-da114d5fa04b3c16,CLIN-050,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-2e3fc6d2c6d17b6b,CLIN-050,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-be51992bbc394fb5,CLIN-050,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-ef095273464e2293,CLIN-050,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-72cccfb32d85cb12,CLIN-051,Gemini 2.5 Pro,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-ec38eda4bed015c7,CLIN-052,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-14d7a425d5225b14,CLIN-053,Gemini 2.5 Pro,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result;Type Misclassification,True,False
+EVAL-64d46db6ddb82631,CLIN-054,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-884501c07861cf48,CLIN-055,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-16760b0a5c5cb228,CLIN-056,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-05f36a6119f1e2eb,CLIN-057,Gemini 2.5 Pro,Q1,3,4,4,4,,,,,,,3.6,65.0,C,False,,False,True
+EVAL-97fd4714e2a550b0,CLIN-058,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-e24c8d7364a2b309,CLIN-059,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-6bd7d3e22a47bb8a,CLIN-060,Gemini 2.5 Pro,Q1,5,5,5,4,,,,,,,4.9,97.5,A,False,,False,True
+EVAL-36fe18aa2bb7d861,CLIN-061,Gemini 2.5 Pro,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-b4a814bafb4ddff8,CLIN-062,Gemini 2.5 Pro,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-6251d50b76ac28b8,CLIN-063,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-e06e3a93887f1be8,CLIN-064,Gemini 2.5 Pro,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-0db75eb603ad2c2c,CLIN-065,Gemini 2.5 Pro,Q1,2,5,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-f32d8e0783026849,CLIN-066,Gemini 2.5 Pro,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-d5b4ad49e2c8057f,CLIN-067,Gemini 2.5 Pro,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-2f3d664cb530c41f,CLIN-051,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-966ca53aaec7be13,CLIN-052,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,49.0,D,True,Type Misclassification,True,False
+EVAL-064423eea59cef22,CLIN-053,Claude Sonnet 4 Thinking,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Fabricated or Erroneous Test Result;Type Misclassification,True,False
+EVAL-91e65e8655356a20,CLIN-054,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-93b420faa48e0f1b,CLIN-055,Claude Sonnet 4 Thinking,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Type Misclassification,True,False
+EVAL-07489d7ee7e84ab5,CLIN-056,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-e6e7143d61bc9441,CLIN-057,Claude Sonnet 4 Thinking,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-e7901a9c91103388,CLIN-058,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-a9e1b32de6b79c46,CLIN-059,Claude Sonnet 4 Thinking,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-0efd3957bd821e8e,CLIN-060,Claude Sonnet 4 Thinking,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-ab0946c91a00f764,CLIN-061,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-5b01d61010e20e0d,CLIN-062,Claude Sonnet 4 Thinking,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-56a430e0dc20ddc6,CLIN-063,Claude Sonnet 4 Thinking,Q1,5,5,4,4,,,,,,,4.7,49.0,D,True,Type Misclassification,True,False
+EVAL-650ff038c013591e,CLIN-064,Claude Sonnet 4 Thinking,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-1cbe53cbfe60eeaa,CLIN-065,Claude Sonnet 4 Thinking,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Type Misclassification,True,False
+EVAL-3faa6356f6d22bb1,CLIN-066,Claude Sonnet 4 Thinking,Q1,5,4,4,4,,,,,,,4.4,85.0,B,False,,False,True
+EVAL-afaa8597e1b48002,CLIN-067,Claude Sonnet 4 Thinking,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-f77c65e50754ecb6,CLIN-051,OpenAI O3,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-63a37aa5e665373c,CLIN-052,OpenAI O3,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-db2beb12aedbbdb9,CLIN-053,OpenAI O3,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Fabricated or Erroneous Test Result;Type Misclassification,True,False
+EVAL-f7d6e2997f978e84,CLIN-054,OpenAI O3,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-74eb90055cd732ae,CLIN-055,OpenAI O3,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-a02ff51c3b01e3a2,CLIN-056,OpenAI O3,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-bf8df720bf24edaf,CLIN-057,OpenAI O3,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-2575aa3229843a19,CLIN-058,OpenAI O3,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-c8ef33fc8a7fb449,CLIN-059,OpenAI O3,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-dd3911b3c3c47ffa,CLIN-060,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-dc170ac69369925a,CLIN-061,OpenAI O3,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-b949bdce23fcdb49,CLIN-062,OpenAI O3,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-e66c2a6a0b7b545c,CLIN-063,OpenAI O3,Q1,5,5,2,4,,,,,,,4.3,49.0,D,True,Severity Misclassification,True,False
+EVAL-2127be97903ad8bd,CLIN-064,OpenAI O3,Q1,3,4,4,4,,,,,,,3.6,65.0,C,False,,False,True
+EVAL-dae35cfb8d208fdd,CLIN-065,OpenAI O3,Q1,2,5,2,4,,,,,,,3.1,49.0,D,True,Severity Misclassification,True,False
+EVAL-ffd5bda523d89639,CLIN-066,OpenAI O3,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-ab804c82af95ef9d,CLIN-067,OpenAI O3,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-0e571a78b3326202,CLIN-051,Grok 4,Q1,3,4,5,4,,,,,,,3.8,70.0,C,False,,False,True
+EVAL-960e650a642a28f4,CLIN-052,Grok 4,Q1,3,5,4,4,,,,,,,3.9,49.0,D,True,Type Misclassification,True,False
+EVAL-c0258c9fff8cbe4c,CLIN-053,Grok 4,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Fabricated or Erroneous Test Result;Type Misclassification,True,False
+EVAL-fc4e26c9144f9a40,CLIN-054,Grok 4,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-804e91a90692626c,CLIN-055,Grok 4,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-f9fb236fdad09f1a,CLIN-056,Grok 4,Q1,3,5,4,4,,,,,,,3.9,49.0,D,True,Type Misclassification,True,False
+EVAL-00177f5a72a77656,CLIN-057,Grok 4,Q1,3,5,5,4,,,,,,,4.1,77.5,B,False,,False,True
+EVAL-8910bab935af4c34,CLIN-058,Grok 4,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-a887ae5d7c187042,CLIN-059,Grok 4,Q1,3,5,3,4,,,,,,,3.7,67.5,C,False,,False,True
+EVAL-9182edc6ed0a4677,CLIN-060,Grok 4,Q1,2,5,4,4,,,,,,,3.5,62.5,C,False,,False,True
+EVAL-17bfda77d928a670,CLIN-061,Grok 4,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-aeee239b5ded8a3d,CLIN-062,Grok 4,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-b4a64faaf30dcf8d,CLIN-063,Grok 4,Q1,2,5,3,4,,,,,,,3.3,49.0,D,True,Fabricated or Erroneous Test Result,True,False
+EVAL-add58f6042dd217a,CLIN-064,Grok 4,Q1,2,5,4,4,,,,,,,3.5,49.0,D,True,Type Misclassification,True,False
+EVAL-fdd4e815d29a511d,CLIN-065,Grok 4,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-1827cffe6c4c45e4,CLIN-066,Grok 4,Q1,5,5,4,4,,,,,,,4.7,92.5,A,False,,False,True
+EVAL-9518ed66a2005af9,CLIN-067,Grok 4,Q1,3,5,4,4,,,,,,,3.9,72.5,C,False,,False,True
+EVAL-7e0bb9022540b933,CLIN-051,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-63bd90850cf61132,CLIN-052,Gemini 2.5 Pro,Q2,,,,,5,5,4,,,,4.8,95.0,A,False,,False,True
+EVAL-eb0e5fea18b6fceb,CLIN-053,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-daf83c804c9aa757,CLIN-054,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-bcb8743b9722c047,CLIN-055,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-1f7ba2088a9c282e,CLIN-056,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-8ed9fc503439aefb,CLIN-057,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-aa77adfc09df6f4f,CLIN-058,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-a5db95ce914a5d65,CLIN-059,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-db233fe56e3cdef9,CLIN-060,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-5ebc5df98240916c,CLIN-061,Gemini 2.5 Pro,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-f8fe4d274d053455,CLIN-062,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-9d66772ffbe4c3f1,CLIN-063,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-c911526bb7c3ec7a,CLIN-064,Gemini 2.5 Pro,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-5b4c2a590b7b0d81,CLIN-065,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-40891286cbe9df9b,CLIN-066,Gemini 2.5 Pro,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-c68dd1fb144d0987,CLIN-067,Gemini 2.5 Pro,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-f4347334d0bad1e8,CLIN-051,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-aed17b49e1cc31bb,CLIN-052,Claude Sonnet 4 Thinking,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-76727f9c4f8f51ec,CLIN-053,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-46f3e1c77b2f58ae,CLIN-054,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-b3221d5f3d6e268c,CLIN-055,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-f1a53f08262eeab9,CLIN-056,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-2195fe7a0d4aef00,CLIN-057,Claude Sonnet 4 Thinking,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-e9da90aef5c0b1bc,CLIN-058,Claude Sonnet 4 Thinking,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-2b4525b62c873faf,CLIN-059,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-13cc560104529aa9,CLIN-060,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-52cb119aa0af4fa9,CLIN-061,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-8882f33f7b1a88e4,CLIN-062,Claude Sonnet 4 Thinking,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-d72530fd057b7224,CLIN-063,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-52e34ed4ec7fc5fa,CLIN-064,Claude Sonnet 4 Thinking,Q2,,,,,2,4,3,,,,2.8,45.0,D,False,,False,False
+EVAL-1b99cbcb8382933f,CLIN-065,Claude Sonnet 4 Thinking,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-79e6d8648eaf2922,CLIN-066,Claude Sonnet 4 Thinking,Q2,,,,,3,5,3,,,,3.6,65.0,C,False,,False,True
+EVAL-b00ebe795513b197,CLIN-067,Claude Sonnet 4 Thinking,Q2,,,,,2,4,3,,,,2.8,45.0,D,False,,False,False
+EVAL-ad886154b6936a7d,CLIN-051,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-f703f42a49b2a103,CLIN-052,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-eec395b37309f7f7,CLIN-053,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-9aea016e00e3f21e,CLIN-054,OpenAI O3,Q2,,,,,2,4,3,,,,2.8,45.0,D,False,,False,False
+EVAL-c70ba861dd97be4b,CLIN-055,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-8c1b42fa1af3ad83,CLIN-056,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-99bc9b9c21ffc0e3,CLIN-057,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-6d2f567edd9f26a8,CLIN-058,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-eb316cedaff822c9,CLIN-059,OpenAI O3,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-330c8b648c1ed1f2,CLIN-060,OpenAI O3,Q2,,,,,5,5,3,,,,4.6,90.0,B,False,,False,True
+EVAL-4d0926ca31216acb,CLIN-061,OpenAI O3,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-7186593bbad325e6,CLIN-062,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-914a9c808340c755,CLIN-063,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-62997ad2eaf26eea,CLIN-064,OpenAI O3,Q2,,,,,2,3,3,,,,2.5,37.5,D,False,,False,False
+EVAL-5e8fa96b0946ea00,CLIN-065,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-84f611932ea71f4a,CLIN-066,OpenAI O3,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-c59162628298f760,CLIN-067,OpenAI O3,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-9eb847abff209fb4,CLIN-051,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-41635c2cb278ec37,CLIN-052,Grok 4,Q2,,,,,2,3,3,,,,2.5,37.5,D,False,,False,False
+EVAL-4113548347fdbd47,CLIN-053,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-d17cc4f4cceb70fb,CLIN-054,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-9dac15346fb0c5e9,CLIN-055,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-1d6bb0fb08c421ab,CLIN-056,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-14d2848793b10a21,CLIN-057,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-f2a2e1d8a2efd37b,CLIN-058,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-1ebb6cbfb71a1c3c,CLIN-059,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-caa2528a25a995e5,CLIN-060,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-6b4e9fe17fd48451,CLIN-061,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-867ae6d1ada0257d,CLIN-062,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-2064ac257db97e8b,CLIN-063,Grok 4,Q2,,,,,3,4,3,,,,3.3,57.5,C,False,,False,True
+EVAL-45847a7397316789,CLIN-064,Grok 4,Q2,,,,,5,3,3,,,,4.0,75.0,B,False,,False,True
+EVAL-549a0cd2e8bf691c,CLIN-065,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-674ae4560c91a990,CLIN-066,Grok 4,Q2,,,,,3,3,3,,,,3.0,50.0,C,False,,False,True
+EVAL-6f543b544b421912,CLIN-067,Grok 4,Q2,,,,,5,4,3,,,,4.3,82.5,B,False,,False,True
+EVAL-b493686e2b665fb1,CLIN-051,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-c0727bbb4b95a6c0,CLIN-052,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-db3faf3e68fb3284,CLIN-053,Gemini 2.5 Pro,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-e69006a88ddf04ed,CLIN-054,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1569d27883e32289,CLIN-055,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-db964bacd0e88371,CLIN-056,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-2e9c2d625043f2da,CLIN-057,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-316b56ade73bb96f,CLIN-058,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-51060912c752eddd,CLIN-059,Gemini 2.5 Pro,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-9f1717156b59a4e0,CLIN-060,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f7a8783a8e3ff4b1,CLIN-061,Gemini 2.5 Pro,Q3,,,,,,,,3,4,3,3.3,57.5,C,False,,False,True
+EVAL-8ac743d0ee2df6aa,CLIN-062,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-4778c2693c17725e,CLIN-063,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-7960fa7b9dab76a1,CLIN-064,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-9c68ee678a33dcc5,CLIN-065,Gemini 2.5 Pro,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-fec6890652bacc4a,CLIN-066,Gemini 2.5 Pro,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-63d07cffabc2dd57,CLIN-067,Gemini 2.5 Pro,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-2b9359010315da2d,CLIN-051,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-e655b64c721b34cb,CLIN-052,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-eb3edc8f37bdba04,CLIN-053,Claude Sonnet 4 Thinking,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-5a7dea592dabb389,CLIN-054,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-6f3a409c355e4b4f,CLIN-055,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-eb638d0629245428,CLIN-056,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-fb0a8724aa64ddf2,CLIN-057,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-92acff3642a0f8bd,CLIN-058,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-2c93075021feb00c,CLIN-059,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-6175c9f9ba1fa88e,CLIN-060,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-2f8480bffed61244,CLIN-061,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-b320f3e753087e11,CLIN-062,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-8a430c06af7a9580,CLIN-063,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-af8d208cd80f0e1b,CLIN-064,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8e4de5d89a321da2,CLIN-065,Claude Sonnet 4 Thinking,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-ec945b81abfed266,CLIN-066,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8979f079fb659785,CLIN-067,Claude Sonnet 4 Thinking,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-05bc10e9c43dfe66,CLIN-051,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-f8a780f3c8c2fb66,CLIN-052,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-62639ff040416e17,CLIN-053,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-a65e92188fedfcc5,CLIN-054,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-34f71e1fca8c20d6,CLIN-055,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-c839cc7a0728dc5c,CLIN-056,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1b8ba237ebbca5f1,CLIN-057,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-99788f7b0ad9450e,CLIN-058,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-ff67b25adfce3ab8,CLIN-059,OpenAI O3,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-a0c6fe9ff6aa9825,CLIN-060,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-edc86e3b85e030be,CLIN-061,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1dc14b9f7ed62c69,CLIN-062,OpenAI O3,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-03cf4f739e798655,CLIN-063,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-674c3ac8dd65a5f4,CLIN-064,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-70ccaea2f97cfcf1,CLIN-065,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-0b2c2f19f5c79c9e,CLIN-066,OpenAI O3,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-e4a679241da26a14,CLIN-067,OpenAI O3,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-2df865619e62bfab,CLIN-051,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-232fde1feea5d41f,CLIN-052,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-a3f7789b356328f7,CLIN-053,Grok 4,Q3,,,,,,,,3,5,3,3.6,65.0,C,False,,False,True
+EVAL-8d324e3dd1a15cc9,CLIN-054,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-8d5bc11c3b98865f,CLIN-055,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-80116108c2a7801e,CLIN-056,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-ead74e064154b6aa,CLIN-057,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-e5e865ad68afc074,CLIN-058,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-f26aa97c617a569c,CLIN-059,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-79ed82a5ebb3fdb1,CLIN-060,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-1f78dec37d77bb3d,CLIN-061,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-fa12d67e8c80003b,CLIN-062,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-6ea491e14a921867,CLIN-063,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-5a250c104133293a,CLIN-064,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True
+EVAL-fdf48fa4ca1eba72,CLIN-065,Grok 4,Q3,,,,,,,,4,5,4,4.3,82.5,B,False,,False,True
+EVAL-b40188c6e001a829,CLIN-066,Grok 4,Q3,,,,,,,,5,5,5,5.0,100.0,A,False,,False,True
+EVAL-52dcbe3486df03d4,CLIN-067,Grok 4,Q3,,,,,,,,5,4,5,4.7,92.5,A,False,,False,True

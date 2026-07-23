@@ -1,0 +1,7 @@
+analysis,comparison,statistic,value,p_value,effect_size,notes
+Kruskal-Wallis,question type,chi-square(2),268.44,<.001,eta_squared_H=0.333,Primary task-type effect
+Kruskal-Wallis,model,chi-square(3),3.66,.30,eta_squared_H=0.001,No significant overall model effect
+Mann-Whitney U,Q3 vs Q1,U,11540,<.001,rank_biserial_r=0.679; Cohen_d=1.34,Bonferroni-corrected
+Mann-Whitney U,Q3 vs Q2,U,9692,<.001,rank_biserial_r=0.730; Cohen_d=1.50,Bonferroni-corrected
+Mann-Whitney U,Q1 vs Q2,U,33573,.57,rank_biserial_r=0.065; Cohen_d=0.006,Not significant
+"ICC(1,1)",case clustering,ICC,0.094,<.001,,"F(66,737)=2.25"

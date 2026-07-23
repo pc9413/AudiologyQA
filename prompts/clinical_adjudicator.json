@@ -1,0 +1,41 @@
+{
+  "name": "clinical_case_adjudicator",
+  "model_snapshot": "claude-opus-4-5-20251101",
+  "temperature": 0,
+  "provenance": "Prompt template recovered from the original local evaluation script; placeholders replace all case-specific content.",
+  "system_prompt": "You are an expert audiologist and clinical documentation specialist serving as an evaluation judge. Your task is to evaluate AI-generated audiology reports by comparing them against ground truth clinical data.\n\nYou must provide rigorous, objective evaluations based on clinical accuracy, completeness, and safety. Be strict but fair in your assessments.",
+  "user_prompt_template": "## Evaluation Task\n\nEvaluate the following AI-generated audiology response (Hypothesis) against the ground truth clinical data (Premise).\n\n### Question Type: {question_type}\n{question_description}\n\n### Case ID: {case_id}\n### Model Being Evaluated: {model_name}\n\n---\n\n### GROUND TRUTH (Premise):\n{premise}\n\n---\n\n### AI RESPONSE (Hypothesis):\n{hypothesis}\n\n---\n\n## Evaluation Criteria for {question_type}:\n\n{evaluation_criteria}\n\n## Instructions:\n\n1. Carefully compare the AI response to the ground truth\n2. Evaluate each dimension on a scale of 1-5:\n   - 5: Excellent - Accurate, complete, clinically appropriate\n   - 4: Good - Minor omissions or variations, clinically acceptable\n   - 3: Acceptable - Some errors or omissions but generally correct\n   - 2: Poor - Significant errors or missing critical information\n   - 1: Unacceptable - Major errors, contradictions, or dangerous content\n\n3. Identify any CRITICAL ERRORS:\n   - Type Misclassification (SNHL vs CHL vs Mixed)\n   - Severity Misclassification (degree off by 2+ categories)\n   - Major Hallucination (fabricated test results or data)\n   - Laterality Confusion (left/right ear errors)\n   - Missed Red Flags (failure to identify urgent conditions)\n   - Dangerous Recommendation (clinically harmful advice)\n\n4. Provide a brief justification for your scores\n\n## Required Output Format (JSON):\n\n{\n  \"case_id\": {case_id},\n  \"model\": \"{model_name}\",\n  \"question_type\": \"{question_type}\",\n  \"dimension_scores\": {\n    {dimension_scores_template}\n  },\n  \"critical_errors\": [\"list of critical errors if any, empty array if none\"],\n  \"justification\": \"Brief explanation of the evaluation\",\n  \"overall_assessment\": \"One of: Excellent, Good, Acceptable, Poor, Unacceptable\"\n}\n\nProvide ONLY the JSON output, no additional text.",
+  "question_descriptions": {
+    "Q1": "Audiometric Test Results - Reporting of hearing test findings",
+    "Q2": "Impression/Diagnosis - Clinical interpretation and diagnostic conclusions",
+    "Q3": "Recommendations - Treatment and management recommendations"
+  },
+  "evaluation_criteria": {
+    "Q1": "**Q1 - Audiometric Results Evaluation:**\n- **Numerical Accuracy (40%)**: Precision of threshold values, SRT, WRS percentages\n  - Are the dB values within ±10 dB of ground truth?\n  - Are speech scores (SRT, WRS) accurately reported?\n- **Test Coverage (30%)**: Completeness of test battery reporting\n  - Pure tone audiometry, speech testing, tympanometry, reflexes, OAE, ABR as applicable\n- **Description Accuracy (20%)**: Correct classification of hearing loss\n  - Type (sensorineural, conductive, mixed)\n  - Degree (normal, mild, moderate, moderately severe, severe, profound)\n  - Configuration (flat, sloping, rising, notched)\n- **Hallucination-Free (10%)**: Absence of fabricated data\n  - No invented test results or values not in ground truth",
+    "Q2": "**Q2 - Impression/Diagnosis Evaluation:**\n- **Diagnostic Accuracy (50%)**: Correctness of primary diagnosis\n  - Does it identify the correct pathology/condition?\n  - Are differential diagnoses appropriate?\n- **Reasoning Logic (30%)**: Quality of clinical reasoning\n  - Are conclusions supported by the audiometric data?\n  - Is the reasoning clinically sound?\n- **Evidence Support (20%)**: Use of test data to support diagnosis\n  - Are specific test results cited appropriately?\n  - Is the evidence-to-conclusion chain clear?",
+    "Q3": "**Q3 - Recommendations Evaluation:**\n- **Relevance (40%)**: Appropriateness of recommendations to diagnosis\n  - Do recommendations address the identified condition?\n  - Are they clinically indicated?\n- **Clinical Feasibility (30%)**: Practicality and safety\n  - Are recommendations achievable?\n  - Are there any potentially harmful suggestions?\n- **Completeness (30%)**: Coverage of key recommendation areas\n  - Amplification, monitoring, referrals, counseling as appropriate\n  - Are all necessary follow-up actions included?"
+  },
+  "dimension_score_templates": {
+    "Q1": "\"numerical_accuracy\": <1-5>,\n\"test_coverage\": <1-5>,\n\"description_accuracy\": <1-5>,\n\"hallucination_free\": <1-5>",
+    "Q2": "\"diagnostic_accuracy\": <1-5>,\n\"reasoning_logic\": <1-5>,\n\"evidence_support\": <1-5>",
+    "Q3": "\"relevance\": <1-5>,\n\"clinical_feasibility\": <1-5>,\n\"completeness\": <1-5>"
+  },
+  "dimension_weights": {
+    "Q1": {
+      "numerical_accuracy": 0.4,
+      "test_coverage": 0.3,
+      "description_accuracy": 0.2,
+      "hallucination_free": 0.1
+    },
+    "Q2": {
+      "diagnostic_accuracy": 0.5,
+      "reasoning_logic": 0.3,
+      "evidence_support": 0.2
+    },
+    "Q3": {
+      "relevance": 0.4,
+      "clinical_feasibility": 0.3,
+      "completeness": 0.3
+    }
+  }
+}

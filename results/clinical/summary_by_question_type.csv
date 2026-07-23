@@ -1,0 +1,4 @@
+question_type,description,n,mean_score,pass_rate_pct,critical_error_rate_pct
+Q1,Audiometric Results,268,67.89,63.8,35.4
+Q2,Diagnostic Impression,268,67.79,93.3,3.7
+Q3,Clinical Recommendations,268,89.74,98.1,0.0

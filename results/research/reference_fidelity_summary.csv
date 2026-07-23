@@ -1,0 +1,5 @@
+analysis,n,result,ci_95_pct,notes
+human fidelity audit,210,209 Accurate; 1 Defensible; 0 Flawed; 0 Indeterminate,98.2-100.0,Fidelity defined as Accurate or Defensible
+human vs LLM flawed/not-flawed agreement,210,100.0%,,Both found zero flawed keys
+human vs LLM four-level label agreement,210,94.3% (198/210),,Disagreements were Accurate versus Defensible
+full-set content-word grounding scan,1460,mean 0.961; 10 low-grounding flags,,All 10 were tokenization artifacts on inspection

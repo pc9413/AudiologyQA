@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "educational_question.schema.json",
+  "title": "AudiologyBench educational question",
+  "description": "One record from data/educational_questions.jsonl. The schema preserves explicitly documented frozen-pool exceptions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "tier",
+    "question_type",
+    "response_format",
+    "question",
+    "reference_answer",
+    "source_id",
+    "source_name",
+    "source_pool",
+    "difficulty",
+    "difficulty_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EDU-(MCQ|TF|FIB)-[0-9]{4}$"
+    },
+    "tier": {
+      "const": "educational"
+    },
+    "question_type": {
+      "enum": ["MCQ", "TF", "FIB"]
+    },
+    "response_format": {
+      "enum": ["single_choice", "multiple_select", "binary", "fill_in_the_blank"]
+    },
+    "question": {
+      "$ref": "#/$defs/nonEmptyString"
+    },
+    "options": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/option"
+      }
+    },
+    "reference_answer": {
+      "$ref": "#/$defs/stringOrComponentList"
+    },
+    "domain": {
+      "$ref": "#/$defs/nonEmptyString"
+    },
+    "difficulty": {
+      "enum": ["easy", "medium", "hard", null]
+    },
+    "difficulty_status": {
+      "enum": [
+        "source_provided",
+        "recovered_from_legacy_frozen_pool",
+        "author_review_required"
+      ]
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^EDU-SRC-[0-9]{3}$",
+      "description": "Foreign key to metadata/sources.csv; it does not imply redistribution clearance."
+    },
+    "source_pool": {
+      "enum": ["online", "non_web"]
+    },
+    "source_name": {
+      "$ref": "#/$defs/nonEmptyString"
+    },
+    "source_item_id": {
+      "$ref": "#/$defs/nonEmptyString"
+    },
+    "source_item_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "data_quality_flag": {
+      "const": "source_type_mismatch"
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "answerComponentList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      },
+      "description": "Jointly required components in recorded source order, not interchangeable alternatives."
+    },
+    "stringOrComponentList": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        {
+          "$ref": "#/$defs/answerComponentList"
+        }
+      ]
+    },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "text"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "pattern": "^[A-E]$"
+        },
+        "text": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "difficulty_status": {
+            "const": "author_review_required"
+          }
+        },
+        "required": ["difficulty_status"]
+      },
+      "then": {
+        "properties": {
+          "difficulty": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "difficulty": {
+            "enum": ["easy", "medium", "hard"]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "question_type": {
+            "const": "MCQ"
+          }
+        },
+        "required": ["question_type"]
+      },
+      "then": {
+        "required": ["options", "domain", "source_item_id"],
+        "oneOf": [
+          {
+            "properties": {
+              "id": {
+                "not": {
+                  "const": "EDU-MCQ-0331"
+                }
+              },
+              "response_format": {
+                "const": "single_choice"
+              },
+              "reference_answer": {
+                "type": "string",
+                "pattern": "^[A-E]$"
+              }
+            }
+          },
+          {
+            "properties": {
+              "id": {
+                "const": "EDU-MCQ-0331"
+              },
+              "response_format": {
+                "const": "multiple_select"
+              },
+              "reference_answer": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "prefixItems": [
+                  {"const": "A"},
+                  {"const": "B"},
+                  {"const": "C"}
+                ],
+                "items": false
+              }
+            },
+            "required": ["id", "response_format", "reference_answer"]
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "question_type": {
+            "const": "TF"
+          }
+        },
+        "required": ["question_type"]
+      },
+      "then": {
+        "required": ["chapter", "source_item_index"],
+        "not": {
+          "required": ["options"]
+        },
+        "oneOf": [
+          {
+            "properties": {
+              "id": {
+                "not": {
+                  "const": "EDU-TF-0660"
+                }
+              },
+              "response_format": {
+                "const": "binary"
+              },
+              "reference_answer": {
+                "enum": ["True", "False"]
+              }
+            }
+          },
+          {
+            "properties": {
+              "id": {
+                "const": "EDU-TF-0660"
+              },
+              "response_format": {
+                "const": "fill_in_the_blank"
+              },
+              "reference_answer": {
+                "$ref": "#/$defs/nonEmptyString"
+              },
+              "data_quality_flag": {
+                "const": "source_type_mismatch"
+              }
+            },
+            "required": ["id", "response_format", "reference_answer", "data_quality_flag"]
+          }
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "question_type": {
+            "const": "FIB"
+          }
+        },
+        "required": ["question_type"]
+      },
+      "then": {
+        "properties": {
+          "response_format": {
+            "const": "fill_in_the_blank"
+          },
+          "reference_answer": {
+            "$ref": "#/$defs/stringOrComponentList"
+          }
+        },
+        "required": ["source_item_index"],
+        "not": {
+          "required": ["options"]
+        },
+        "anyOf": [
+          {"required": ["chapter"]},
+          {"required": ["source_item_id"]}
+        ]
+      }
+    }
+  ]
+}

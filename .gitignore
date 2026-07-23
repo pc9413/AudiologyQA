@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.venv/
+private/
+**/clinical_cases.jsonl
+**/clinical_images/
+**/*unblinding_key*
+**/raw_model_outputs/

@@ -1,0 +1,6 @@
+group,question_type,metric,value,numerator,denominator,ci_95_pct,notes
+human audiologists,Q1,critical_error_rate_pct,3.1,1,32,0.6-15.7,16 enriched cases; 2 audiologists
+models,Q1,critical_error_rate_pct,81.2,52,64,70.0-88.9,same 16 enriched cases; 4 models
+human audiologists,Q1,critical_errors_on_all_four_model_failure_cases,0,0,22,,11 cases x 2 audiologists
+human audiologists,Q3,mean_score,93.4,,,89.1-96.7,models 84.5-87.3
+models,Q3,dangerous_recommendation_rate_pct,0.0,0,64,,on the 16 enriched cases

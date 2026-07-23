@@ -1,0 +1,5 @@
+model,mean_score,sd,pass_rate_pct,critical_error_rate_pct
+Gemini 2.5 Pro,77.66,17.91,87.6,11.9
+Claude Sonnet 4 Thinking,74.59,19.5,83.1,14.9
+OpenAI O3,74.41,19.32,85.6,11.9
+Grok 4,73.89,19.32,84.1,13.4
